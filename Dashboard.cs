@@ -128,6 +128,13 @@ namespace Software_Project
             this.Close();
             
         }
+
+        private void showCaught_Click(object sender, EventArgs e)
+        {
+            listView1.Items.Clear();
+            var table = controller.showList("User_Caught");
+            controller.listViewChange(table, "Dashboard");
+        }
     }
 }
 

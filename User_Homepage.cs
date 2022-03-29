@@ -68,5 +68,10 @@ namespace Software_Project
             var table = controller.showList("User_Favorite");
             controller.listViewChange(table, "User_Homepage");
         }
+
+        private void User_Homepage_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

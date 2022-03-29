@@ -30,3 +30,19 @@ C:\Users\anime\Desktop\pokemon_app\obj\Debug\Software Project.csproj.GenerateRes
 C:\Users\anime\Desktop\pokemon_app\obj\Debug\Software Project.csproj.CoreCompileInputs.cache
 C:\Users\anime\Desktop\pokemon_app\obj\Debug\Software Project.exe
 C:\Users\anime\Desktop\pokemon_app\obj\Debug\Software Project.pdb
+C:\Users\boggs\OneDrive\Documents\Visual Studio Projects\pokemon_app\bin\Debug\Software Project.exe.config
+C:\Users\boggs\OneDrive\Documents\Visual Studio Projects\pokemon_app\bin\Debug\Software Project.exe
+C:\Users\boggs\OneDrive\Documents\Visual Studio Projects\pokemon_app\bin\Debug\Software Project.pdb
+C:\Users\boggs\OneDrive\Documents\Visual Studio Projects\pokemon_app\obj\Debug\Software Project.csproj.AssemblyReference.cache
+C:\Users\boggs\OneDrive\Documents\Visual Studio Projects\pokemon_app\obj\Debug\Software Project.csproj.SuggestedBindingRedirects.cache
+C:\Users\boggs\OneDrive\Documents\Visual Studio Projects\pokemon_app\obj\Debug\Software_Project.CustomCaughtButton.resources
+C:\Users\boggs\OneDrive\Documents\Visual Studio Projects\pokemon_app\obj\Debug\Software_Project.CustomFavoriteButton.resources
+C:\Users\boggs\OneDrive\Documents\Visual Studio Projects\pokemon_app\obj\Debug\Software_Project.Dashboard.resources
+C:\Users\boggs\OneDrive\Documents\Visual Studio Projects\pokemon_app\obj\Debug\Software_Project.FrmLogin.resources
+C:\Users\boggs\OneDrive\Documents\Visual Studio Projects\pokemon_app\obj\Debug\Software_Project.FrmRegister.resources
+C:\Users\boggs\OneDrive\Documents\Visual Studio Projects\pokemon_app\obj\Debug\Software_Project.Properties.Resources.resources
+C:\Users\boggs\OneDrive\Documents\Visual Studio Projects\pokemon_app\obj\Debug\Software_Project.User_Homepage.resources
+C:\Users\boggs\OneDrive\Documents\Visual Studio Projects\pokemon_app\obj\Debug\Software Project.csproj.GenerateResource.cache
+C:\Users\boggs\OneDrive\Documents\Visual Studio Projects\pokemon_app\obj\Debug\Software Project.csproj.CoreCompileInputs.cache
+C:\Users\boggs\OneDrive\Documents\Visual Studio Projects\pokemon_app\obj\Debug\Software Project.exe
+C:\Users\boggs\OneDrive\Documents\Visual Studio Projects\pokemon_app\obj\Debug\Software Project.pdb

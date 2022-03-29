@@ -226,7 +226,7 @@ namespace Software_Project
                 }
             }
         }
-        public void addPokemon(string database)
+        public void addPokemon(string database) //Adds Pokemon into a database
         {
             model.openController();  
             string unqiueIDCheck = "SELECT * FROM " + database + " WHERE ID= '" + Dashboard.selectedID + "' and username= '" + FrmLogin.name + "'";
@@ -264,7 +264,7 @@ namespace Software_Project
                 }
             }
         }
-        public void insertPokemon(string database)
+        public void insertPokemon(string database) //Inserts Pokemon into a specific database (Used along side AddPokemon() )
         {
             string insertPokemon = "INSERT INTO " + database + " VALUES ('" + FrmLogin.name + "','" + Dashboard.selectedID + "')";
             model.executeNonQueryCommand(model.databaseCommand(insertPokemon, model.getCon()));
@@ -272,7 +272,7 @@ namespace Software_Project
             clearText(3);
             MessageBox.Show("Pokemon has been added to list!");
         }
-        public void removePokemon(string database)
+        public void removePokemon(string database) //Remove Pokemon from a database
         {
                 model.openController();
                 string unqiueIDCheck = "SELECT * FROM " + database + " WHERE ID= '" + Dashboard.selectedID + "' and username= '" + FrmLogin.name + "'";
@@ -287,7 +287,7 @@ namespace Software_Project
 
                 else  ///Pokemon not in list
                 {
-                    MessageBox.Show("Pokemon not in caught list");
+                    MessageBox.Show("Pokemon not in list!");
                     clearText(3);
                     model.closeController();
                 }

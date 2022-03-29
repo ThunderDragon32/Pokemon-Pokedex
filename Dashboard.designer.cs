@@ -43,6 +43,7 @@
             this.favoriteButton = new System.Windows.Forms.Button();
             this.logoutButton = new System.Windows.Forms.Button();
             this.userPageButton = new System.Windows.Forms.Button();
+            this.showCaught = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // listView1
@@ -95,7 +96,7 @@
             // 
             // caughtButton
             // 
-            this.caughtButton.Location = new System.Drawing.Point(529, 394);
+            this.caughtButton.Location = new System.Drawing.Point(542, 394);
             this.caughtButton.Name = "caughtButton";
             this.caughtButton.Size = new System.Drawing.Size(108, 42);
             this.caughtButton.TabIndex = 2;
@@ -157,7 +158,7 @@
             // 
             // favoriteButton
             // 
-            this.favoriteButton.Location = new System.Drawing.Point(648, 394);
+            this.favoriteButton.Location = new System.Drawing.Point(656, 394);
             this.favoriteButton.Name = "favoriteButton";
             this.favoriteButton.Size = new System.Drawing.Size(108, 42);
             this.favoriteButton.TabIndex = 10;
@@ -177,7 +178,7 @@
             // 
             // userPageButton
             // 
-            this.userPageButton.Location = new System.Drawing.Point(687, 306);
+            this.userPageButton.Location = new System.Drawing.Point(658, 310);
             this.userPageButton.Name = "userPageButton";
             this.userPageButton.Size = new System.Drawing.Size(108, 31);
             this.userPageButton.TabIndex = 13;
@@ -185,12 +186,24 @@
             this.userPageButton.UseVisualStyleBackColor = true;
             this.userPageButton.Click += new System.EventHandler(this.userPageButton_Click);
             // 
+            // showCaught
+            // 
+            this.showCaught.Font = new System.Drawing.Font("Nirmala UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.showCaught.Location = new System.Drawing.Point(546, 309);
+            this.showCaught.Name = "showCaught";
+            this.showCaught.Size = new System.Drawing.Size(106, 31);
+            this.showCaught.TabIndex = 14;
+            this.showCaught.Text = "Show Caught";
+            this.showCaught.UseVisualStyleBackColor = true;
+            this.showCaught.Click += new System.EventHandler(this.showCaught_Click);
+            // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(818, 647);
+            this.Controls.Add(this.showCaught);
             this.Controls.Add(this.userPageButton);
             this.Controls.Add(this.logoutButton);
             this.Controls.Add(this.favoriteButton);
@@ -231,5 +244,6 @@
         private System.Windows.Forms.Button favoriteButton;
         private System.Windows.Forms.Button logoutButton;
         private System.Windows.Forms.Button userPageButton;
+        private System.Windows.Forms.Button showCaught;
     }
 }
