@@ -63,6 +63,7 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // pictureBox2
             // 
@@ -165,7 +166,7 @@
             // 
             // showCaughtList
             // 
-            this.showCaughtList.Location = new System.Drawing.Point(632, 427);
+            this.showCaughtList.Location = new System.Drawing.Point(632, 484);
             this.showCaughtList.Name = "showCaughtList";
             this.showCaughtList.Size = new System.Drawing.Size(143, 37);
             this.showCaughtList.TabIndex = 15;
@@ -186,7 +187,7 @@
             // selectedPokemon
             // 
             this.selectedPokemon.AutoSize = true;
-            this.selectedPokemon.Location = new System.Drawing.Point(542, 484);
+            this.selectedPokemon.Location = new System.Drawing.Point(422, 491);
             this.selectedPokemon.Name = "selectedPokemon";
             this.selectedPokemon.Size = new System.Drawing.Size(59, 23);
             this.selectedPokemon.TabIndex = 17;
@@ -195,7 +196,7 @@
             // selectedPokemonID
             // 
             this.selectedPokemonID.AutoSize = true;
-            this.selectedPokemonID.Location = new System.Drawing.Point(679, 484);
+            this.selectedPokemonID.Location = new System.Drawing.Point(532, 491);
             this.selectedPokemonID.Name = "selectedPokemonID";
             this.selectedPokemonID.Size = new System.Drawing.Size(59, 23);
             this.selectedPokemonID.TabIndex = 18;
@@ -203,7 +204,7 @@
             // 
             // searchPageButton
             // 
-            this.searchPageButton.Location = new System.Drawing.Point(647, 352);
+            this.searchPageButton.Location = new System.Drawing.Point(632, 367);
             this.searchPageButton.Name = "searchPageButton";
             this.searchPageButton.Size = new System.Drawing.Size(143, 37);
             this.searchPageButton.TabIndex = 19;
@@ -213,7 +214,7 @@
             // 
             // favoriteListButton
             // 
-            this.favoriteListButton.Location = new System.Drawing.Point(481, 352);
+            this.favoriteListButton.Location = new System.Drawing.Point(632, 427);
             this.favoriteListButton.Name = "favoriteListButton";
             this.favoriteListButton.Size = new System.Drawing.Size(143, 37);
             this.favoriteListButton.TabIndex = 20;

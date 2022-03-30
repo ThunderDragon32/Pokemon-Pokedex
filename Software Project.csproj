@@ -110,6 +110,12 @@
     <Compile Include="CustomFavoriteButton.designer.cs">
       <DependentUpon>CustomFavoriteButton.cs</DependentUpon>
     </Compile>
+    <Compile Include="CustomShowButton.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomShowButton.Designer.cs">
+      <DependentUpon>CustomShowButton.cs</DependentUpon>
+    </Compile>
     <Compile Include="Dashboard.cs">
       <SubType>Form</SubType>
     </Compile>

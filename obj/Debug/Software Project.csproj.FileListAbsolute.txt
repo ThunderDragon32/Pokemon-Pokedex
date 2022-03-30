@@ -46,3 +46,9 @@ C:\Users\boggs\OneDrive\Documents\Visual Studio Projects\pokemon_app\obj\Debug\S
 C:\Users\boggs\OneDrive\Documents\Visual Studio Projects\pokemon_app\obj\Debug\Software Project.csproj.CoreCompileInputs.cache
 C:\Users\boggs\OneDrive\Documents\Visual Studio Projects\pokemon_app\obj\Debug\Software Project.exe
 C:\Users\boggs\OneDrive\Documents\Visual Studio Projects\pokemon_app\obj\Debug\Software Project.pdb
+C:\Users\boggs\OneDrive\Documents\Visual Studio Projects\pokemon_app\bin\Debug\Newtonsoft.Json.dll
+C:\Users\boggs\OneDrive\Documents\Visual Studio Projects\pokemon_app\bin\Debug\System.Net.Http.Extensions.dll
+C:\Users\boggs\OneDrive\Documents\Visual Studio Projects\pokemon_app\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\boggs\OneDrive\Documents\Visual Studio Projects\pokemon_app\bin\Debug\System.Net.Http.Primitives.dll
+C:\Users\boggs\OneDrive\Documents\Visual Studio Projects\pokemon_app\bin\Debug\Newtonsoft.Json.xml
+C:\Users\boggs\OneDrive\Documents\Visual Studio Projects\pokemon_app\obj\Debug\Software Project.csproj.CopyComplete
