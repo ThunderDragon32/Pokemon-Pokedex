@@ -23,6 +23,7 @@ namespace Software_Project
         public static ListView ListView1;
         public static CustomCaughtButton cusCaughtButton = new CustomCaughtButton();
         public static CustomFavoriteButton cusFavoriteButton = new CustomFavoriteButton();
+        public static CustomShowButton cusShowButton = new CustomShowButton();
         public static string selectedID = ""; //When user selects Pokemon the ID is saved
         public static string selectedName = ""; //When user selects Pokemon the name is saved
         public static Label SelectedLabelID;
@@ -51,7 +52,7 @@ namespace Software_Project
         private void listView1_SelectedIndexChanged(object sender, EventArgs e)
         {
             
-            controller.userHomeSelectChange();
+            controller.listViewSelectChange();
             
         }
 
@@ -77,6 +78,11 @@ namespace Software_Project
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             pictureBox1.ImageLocation = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/" + "1.png";
+        }
+
+        private void showListButton_Click(object sender, EventArgs e)
+        {
+            cusShowButton.ShowDialog();
         }
     }
 }

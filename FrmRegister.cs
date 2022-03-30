@@ -39,23 +39,28 @@ namespace Software_Project
 
         private void CheckbxShowPas_CheckedChanged(object sender, EventArgs e)
         {
-            controller.checkbxShowPas(1);
+            controller.checkbxShowPas();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            controller.clearText(1);
+            controller.clearText();
         }
 
         private void label6_Click(object sender, EventArgs e)
         {
             new FrmLogin().Show();
-            this.Hide();
+            this.Close();
         }
 
         private void frmRegister_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void exitApp_Click(object sender, EventArgs e)
+        {
+            FrmLogin.FrmLog.Close();
         }
     }
         

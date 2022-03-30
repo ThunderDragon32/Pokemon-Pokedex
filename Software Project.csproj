@@ -149,6 +149,9 @@
     <EmbeddedResource Include="CustomFavoriteButton.resx">
       <DependentUpon>CustomFavoriteButton.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CustomShowButton.resx">
+      <DependentUpon>CustomShowButton.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </EmbeddedResource>

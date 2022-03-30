@@ -28,12 +28,93 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.showListLabel = new System.Windows.Forms.Label();
+            this.showCaughtButton = new System.Windows.Forms.Button();
+            this.showFavoriteButton = new System.Windows.Forms.Button();
+            this.cancelButton = new System.Windows.Forms.Button();
+            this.closeDialog = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // showListLabel
+            // 
+            this.showListLabel.AutoSize = true;
+            this.showListLabel.Font = new System.Drawing.Font("Oswald", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.showListLabel.Location = new System.Drawing.Point(160, 29);
+            this.showListLabel.Name = "showListLabel";
+            this.showListLabel.Size = new System.Drawing.Size(133, 41);
+            this.showListLabel.TabIndex = 1;
+            this.showListLabel.Text = "Show List";
+            // 
+            // showCaughtButton
+            // 
+            this.showCaughtButton.Location = new System.Drawing.Point(33, 141);
+            this.showCaughtButton.Name = "showCaughtButton";
+            this.showCaughtButton.Size = new System.Drawing.Size(117, 49);
+            this.showCaughtButton.TabIndex = 2;
+            this.showCaughtButton.Text = "Show Caught";
+            this.showCaughtButton.UseVisualStyleBackColor = true;
+            this.showCaughtButton.Click += new System.EventHandler(this.showCaughtButton_Click);
+            // 
+            // showFavoriteButton
+            // 
+            this.showFavoriteButton.Location = new System.Drawing.Point(167, 141);
+            this.showFavoriteButton.Name = "showFavoriteButton";
+            this.showFavoriteButton.Size = new System.Drawing.Size(117, 49);
+            this.showFavoriteButton.TabIndex = 2;
+            this.showFavoriteButton.Text = "Show Favorite";
+            this.showFavoriteButton.UseVisualStyleBackColor = true;
+            this.showFavoriteButton.Click += new System.EventHandler(this.showFavoriteButton_Click);
+            // 
+            // cancelButton
+            // 
+            this.cancelButton.Location = new System.Drawing.Point(300, 141);
+            this.cancelButton.Name = "cancelButton";
+            this.cancelButton.Size = new System.Drawing.Size(117, 49);
+            this.cancelButton.TabIndex = 2;
+            this.cancelButton.Text = "CANCEL";
+            this.cancelButton.UseVisualStyleBackColor = true;
+            this.cancelButton.Click += new System.EventHandler(this.cancelButton_Click);
+            // 
+            // closeDialog
+            // 
+            this.closeDialog.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
+            this.closeDialog.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.closeDialog.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.closeDialog.ForeColor = System.Drawing.Color.White;
+            this.closeDialog.Location = new System.Drawing.Point(422, 0);
+            this.closeDialog.Name = "closeDialog";
+            this.closeDialog.Size = new System.Drawing.Size(32, 31);
+            this.closeDialog.TabIndex = 19;
+            this.closeDialog.Text = "X";
+            this.closeDialog.UseVisualStyleBackColor = false;
+            this.closeDialog.Click += new System.EventHandler(this.closeDialog_Click);
+            // 
+            // CustomShowButton
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(454, 235);
+            this.Controls.Add(this.closeDialog);
+            this.Controls.Add(this.cancelButton);
+            this.Controls.Add(this.showFavoriteButton);
+            this.Controls.Add(this.showCaughtButton);
+            this.Controls.Add(this.showListLabel);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "CustomShowButton";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CustomShowButton";
+            this.Load += new System.EventHandler(this.CustomShowButton_Load);
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Label showListLabel;
+        private System.Windows.Forms.Button showCaughtButton;
+        private System.Windows.Forms.Button showFavoriteButton;
+        private System.Windows.Forms.Button cancelButton;
+        private System.Windows.Forms.Button closeDialog;
     }
 }

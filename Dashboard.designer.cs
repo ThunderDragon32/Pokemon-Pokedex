@@ -43,7 +43,15 @@
             this.favoriteButton = new System.Windows.Forms.Button();
             this.logoutButton = new System.Windows.Forms.Button();
             this.userPageButton = new System.Windows.Forms.Button();
-            this.showCaught = new System.Windows.Forms.Button();
+            this.showListButton = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.type1Label = new System.Windows.Forms.Label();
+            this.type2Label = new System.Windows.Forms.Label();
+            this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // listView1
@@ -52,7 +60,8 @@
             this.columnHeader1,
             this.columnHeader2,
             this.columnHeader3,
-            this.columnHeader4});
+            this.columnHeader4,
+            this.columnHeader5});
             this.listView1.FullRowSelect = true;
             this.listView1.GridLines = true;
             this.listView1.HideSelection = false;
@@ -110,10 +119,11 @@
             this.selectedLabel.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.selectedLabel.Font = new System.Drawing.Font("Cooper Black", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.selectedLabel.ForeColor = System.Drawing.Color.Red;
-            this.selectedLabel.Location = new System.Drawing.Point(605, 439);
+            this.selectedLabel.Location = new System.Drawing.Point(468, 45);
             this.selectedLabel.Name = "selectedLabel";
-            this.selectedLabel.Size = new System.Drawing.Size(0, 23);
+            this.selectedLabel.Size = new System.Drawing.Size(68, 23);
             this.selectedLabel.TabIndex = 3;
+            this.selectedLabel.Text = "Name";
             this.selectedLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label3
@@ -151,10 +161,11 @@
             // selectedLabelID
             // 
             this.selectedLabelID.AutoSize = true;
-            this.selectedLabelID.Location = new System.Drawing.Point(652, 310);
+            this.selectedLabelID.Location = new System.Drawing.Point(412, 45);
             this.selectedLabelID.Name = "selectedLabelID";
-            this.selectedLabelID.Size = new System.Drawing.Size(0, 23);
+            this.selectedLabelID.Size = new System.Drawing.Size(28, 23);
             this.selectedLabelID.TabIndex = 7;
+            this.selectedLabelID.Text = "ID";
             // 
             // favoriteButton
             // 
@@ -168,7 +179,7 @@
             // 
             // logoutButton
             // 
-            this.logoutButton.Location = new System.Drawing.Point(702, 12);
+            this.logoutButton.Location = new System.Drawing.Point(726, -2);
             this.logoutButton.Name = "logoutButton";
             this.logoutButton.Size = new System.Drawing.Size(93, 34);
             this.logoutButton.TabIndex = 12;
@@ -186,16 +197,73 @@
             this.userPageButton.UseVisualStyleBackColor = true;
             this.userPageButton.Click += new System.EventHandler(this.userPageButton_Click);
             // 
-            // showCaught
+            // showListButton
             // 
-            this.showCaught.Font = new System.Drawing.Font("Nirmala UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.showCaught.Location = new System.Drawing.Point(546, 309);
-            this.showCaught.Name = "showCaught";
-            this.showCaught.Size = new System.Drawing.Size(106, 31);
-            this.showCaught.TabIndex = 14;
-            this.showCaught.Text = "Show Caught";
-            this.showCaught.UseVisualStyleBackColor = true;
-            this.showCaught.Click += new System.EventHandler(this.showCaught_Click);
+            this.showListButton.Location = new System.Drawing.Point(546, 310);
+            this.showListButton.Name = "showListButton";
+            this.showListButton.Size = new System.Drawing.Size(106, 31);
+            this.showListButton.TabIndex = 15;
+            this.showListButton.Text = "Show List";
+            this.showListButton.UseVisualStyleBackColor = true;
+            this.showListButton.Click += new System.EventHandler(this.showListButton_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(59, 284);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(52, 23);
+            this.label2.TabIndex = 16;
+            this.label2.Text = "Filter";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(345, 284);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(95, 23);
+            this.label4.TabIndex = 17;
+            this.label4.Text = "Search Bar";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(412, 125);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(47, 23);
+            this.label5.TabIndex = 18;
+            this.label5.Text = "Desc";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(154, 45);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(235, 179);
+            this.pictureBox1.TabIndex = 19;
+            this.pictureBox1.TabStop = false;
+            // 
+            // type1Label
+            // 
+            this.type1Label.AutoSize = true;
+            this.type1Label.Location = new System.Drawing.Point(412, 85);
+            this.type1Label.Name = "type1Label";
+            this.type1Label.Size = new System.Drawing.Size(58, 23);
+            this.type1Label.TabIndex = 20;
+            this.type1Label.Text = "Type1";
+            // 
+            // type2Label
+            // 
+            this.type2Label.AutoSize = true;
+            this.type2Label.Location = new System.Drawing.Point(478, 85);
+            this.type2Label.Name = "type2Label";
+            this.type2Label.Size = new System.Drawing.Size(58, 23);
+            this.type2Label.TabIndex = 21;
+            this.type2Label.Text = "Type2";
+            // 
+            // columnHeader5
+            // 
+            this.columnHeader5.Text = "";
+            this.columnHeader5.Width = 0;
             // 
             // Dashboard
             // 
@@ -203,7 +271,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(818, 647);
-            this.Controls.Add(this.showCaught);
+            this.Controls.Add(this.type2Label);
+            this.Controls.Add(this.type1Label);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.showListButton);
             this.Controls.Add(this.userPageButton);
             this.Controls.Add(this.logoutButton);
             this.Controls.Add(this.favoriteButton);
@@ -222,7 +296,9 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Dashboard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Filter";
             this.Load += new System.EventHandler(this.dashboard_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -244,6 +320,13 @@
         private System.Windows.Forms.Button favoriteButton;
         private System.Windows.Forms.Button logoutButton;
         private System.Windows.Forms.Button userPageButton;
-        private System.Windows.Forms.Button showCaught;
+        private System.Windows.Forms.Button showListButton;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label type1Label;
+        private System.Windows.Forms.Label type2Label;
+        private System.Windows.Forms.ColumnHeader columnHeader5;
     }
 }

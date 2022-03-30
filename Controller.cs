@@ -31,27 +31,16 @@ namespace Software_Project
             else //User and Pass were not correct
             {
                 MessageBox.Show("Invalid Username or Password, Please Try Again", "Login Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                clearText(0);
+                clearText();
                 model.closeController();
 
             }
         }
 
 
-        public void checkbxShowPas(int option) //Check Box on/off 
+        public void checkbxShowPas() //Check Box on/off 
         {
-            if (option == 0)
-            {
-                if (FrmLogin.CkbxShowPas.Checked)
-                {
-                    FrmLogin.TxtPassword.PasswordChar = '\0';
-                }
-                else
-                {
-                    FrmLogin.TxtPassword.PasswordChar = '•';
-                }
-            }
-            else if(option == 1)
+            if (Application.OpenForms["FrmRegister"] != null)
             {
                 if (FrmRegister.CkbxShowPas.Checked)
                 {
@@ -64,50 +53,54 @@ namespace Software_Project
                     FrmRegister.TxtComPassword.PasswordChar = '•';
                 }
             }
-            
-        }
-        
-
-        public void clearText(int option) //Resets and Focuses Text
-        {
-            if (option == 0)
+            else
             {
-                FrmLogin.TxtUsername.Text = "";
-                FrmLogin.TxtPassword.Text = "";
-                FrmLogin.TxtUsername.Focus();
+                if (FrmLogin.CkbxShowPas.Checked)
+                {
+                    FrmLogin.TxtPassword.PasswordChar = '\0';
+                }
+                else
+                {
+                    FrmLogin.TxtPassword.PasswordChar = '•';
+                }
             }
-            else if(option == 1)
+        }
+
+        public void clearText() //Resets and Focuses Text
+        {
+            if (Application.OpenForms["FrmRegister"] != null)
             {
                 FrmRegister.TxtUsername.Text = "";
                 FrmRegister.TxtPassword.Text = "";
                 FrmRegister.TxtComPassword.Text = "";
                 FrmRegister.TxtUsername.Focus();
             }
-            else if(option == 2)
+            else if(Application.OpenForms["Dashboard"] != null)
             {
                 Dashboard.selectedID = "";
                 Dashboard.selectedName = "";
+                Dashboard.selectedType1 = "";
+                Dashboard.selectedType2 = "";
                 Dashboard.SelectedLabel.Text = Dashboard.selectedName;
                 Dashboard.SelectedLabelID.Text = Dashboard.selectedID;
+                Dashboard.Type1Label.Text = Dashboard.selectedType1;
+                Dashboard.Type2Label.Text = Dashboard.selectedType2;
             }
-            else if(option == 3)
-            {
-                Dashboard.SelectedLabel.Text = "";
-                Dashboard.SelectedLabelID.Text = "";
-            }
-            else if(option == 4)
+            else if(Application.OpenForms["User_Homepage"] != null)
             {
                 User_Homepage.selectedID = "";
                 User_Homepage.selectedName = "";
                 User_Homepage.SelectedLabel.Text = User_Homepage.selectedName;
                 User_Homepage.SelectedLabelID.Text = User_Homepage.selectedID;
             }
-            else if(option == 5)
+            else
             {
-                User_Homepage.SelectedLabel.Text = "";
-                User_Homepage.SelectedLabelID.Text = "";
+                FrmLogin.TxtUsername.Text = "";
+                FrmLogin.TxtPassword.Text = "";
+                FrmLogin.TxtUsername.Focus();
             }
         }
+
 
         public void Registration()
         {
@@ -124,7 +117,7 @@ namespace Software_Project
                 {
                     //User has already been created
                     MessageBox.Show("User not Unquie!", "Registration Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    clearText(1);
+                    clearText();
                     model.closeController();
                     
                 }
@@ -135,7 +128,7 @@ namespace Software_Project
                     
                     model.executeNonQueryCommand(model.databaseCommand(register, model.getCon()));
                     model.closeController();
-                    clearText(1);
+                    clearText();
                     MessageBox.Show("Your Account has been Successfully Created", "Registration Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
 
@@ -144,38 +137,37 @@ namespace Software_Project
             else  //Passwords do not match
             {
                 MessageBox.Show("Passwords does not match, Please Re-enter", "Registration Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                clearText(1);
+                clearText();
             }
         }
-        public void dashListViewSelectChange() //Changes selection when user interacts with display
+        public void listViewSelectChange() //Changes selection when user interacts with display
         {
-            
+            if (Application.OpenForms["Dashboard"] != null)
+            {
                 if (Dashboard.ListView1.SelectedItems.Count > 0)
                 {
                     Dashboard.selectedName = Dashboard.ListView1.SelectedItems[0].SubItems[1].Text;
                     Dashboard.selectedID = Dashboard.ListView1.SelectedItems[0].SubItems[0].Text;
+                    Dashboard.selectedType1 = Dashboard.ListView1.SelectedItems[0].SubItems[2].Text;
+                    Dashboard.selectedType2 = Dashboard.ListView1.SelectedItems[0].SubItems[3].Text;
                     Dashboard.SelectedLabel.Text = Dashboard.selectedName;
                     Dashboard.SelectedLabelID.Text = Dashboard.selectedID;
+                    Dashboard.Type1Label.Text = Dashboard.selectedType1;
+                    Dashboard.Type2Label.Text = Dashboard.selectedType2;
                 }
-                
-            
-        }
-        public void userHomeSelectChange() //Changes selection when user interacts with display
-        {
+            }
+            else { 
+                if (User_Homepage.ListView1.SelectedItems.Count > 0)
+                {
+                    User_Homepage.selectedName = User_Homepage.ListView1.SelectedItems[0].SubItems[1].Text;
+                    User_Homepage.selectedID = User_Homepage.ListView1.SelectedItems[0].SubItems[0].Text;
+                    User_Homepage.SelectedLabel.Text = User_Homepage.selectedName;
+                    User_Homepage.SelectedLabelID.Text = User_Homepage.selectedID;
 
 
-            if (User_Homepage.ListView1.SelectedItems.Count > 0)
-            {
-                User_Homepage.selectedName = User_Homepage.ListView1.SelectedItems[0].SubItems[1].Text;
-                User_Homepage.selectedID = User_Homepage.ListView1.SelectedItems[0].SubItems[0].Text;
-                User_Homepage.SelectedLabel.Text = User_Homepage.selectedName;
-                User_Homepage.SelectedLabelID.Text = User_Homepage.selectedID;
-
-
+                }
             }
         }
-            
-
 
         public DataTable tableSet(OleDbDataAdapter dat)  //Fills Table Data Set
         {
@@ -206,7 +198,8 @@ namespace Software_Project
                             row[0].ToString(),
                             row[1].ToString(),
                             row[2].ToString(),
-                            row[3].ToString()
+                            row[3].ToString(),
+                            row[4].ToString()
                         };
                         var value = new ListViewItem(items);
                         if (view == "Dashboard")
@@ -234,7 +227,7 @@ namespace Software_Project
             {
                 //Pokemon is already in list
                 MessageBox.Show("Pokemon already in list!");
-                clearText(3);
+                clearText();
                 model.closeController();
 
             }
@@ -251,7 +244,7 @@ namespace Software_Project
                     
                     else
                     {
-                        clearText(2);
+                        clearText();
                         model.closeController();
                         MessageBox.Show("Only 6 Pokemon can be your favorite!");
                     }
@@ -259,7 +252,7 @@ namespace Software_Project
                 else
                 {
                     model.closeController();
-                    clearText(3);
+                    clearText();
                     MessageBox.Show("No Pokemon Selected!");
                 }
             }
@@ -269,7 +262,7 @@ namespace Software_Project
             string insertPokemon = "INSERT INTO " + database + " VALUES ('" + FrmLogin.name + "','" + Dashboard.selectedID + "')";
             model.executeNonQueryCommand(model.databaseCommand(insertPokemon, model.getCon()));
             model.closeController();
-            clearText(3);
+            clearText();
             MessageBox.Show("Pokemon has been added to list!");
         }
         public void removePokemon(string database) //Remove Pokemon from a database
@@ -281,14 +274,14 @@ namespace Software_Project
                     string deletePokemon = "DELETE FROM " + database + " WHERE ID= '" + Dashboard.selectedID + "' and username= '" + FrmLogin.name + "'";
                     model.executeNonQueryCommand(model.databaseCommand(deletePokemon, model.getCon()));
                     model.closeController();
-                    clearText(3);
+                    clearText();
                     MessageBox.Show("Pokemon has been removed from list!");
                 }
 
                 else  ///Pokemon not in list
                 {
                     MessageBox.Show("Pokemon not in list!");
-                    clearText(3);
+                    clearText();
                     model.closeController();
                 }
                 

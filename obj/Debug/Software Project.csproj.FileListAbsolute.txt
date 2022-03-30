@@ -52,3 +52,4 @@ C:\Users\boggs\OneDrive\Documents\Visual Studio Projects\pokemon_app\bin\Debug\S
 C:\Users\boggs\OneDrive\Documents\Visual Studio Projects\pokemon_app\bin\Debug\System.Net.Http.Primitives.dll
 C:\Users\boggs\OneDrive\Documents\Visual Studio Projects\pokemon_app\bin\Debug\Newtonsoft.Json.xml
 C:\Users\boggs\OneDrive\Documents\Visual Studio Projects\pokemon_app\obj\Debug\Software Project.csproj.CopyComplete
+C:\Users\boggs\OneDrive\Documents\Visual Studio Projects\pokemon_app\obj\Debug\Software_Project.CustomShowButton.resources

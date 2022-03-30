@@ -25,6 +25,8 @@ namespace Software_Project
             ListView1 = this.listView1;
             SelectedLabel = this.selectedLabel;
             SelectedLabelID = this.selectedLabelID;
+            Type1Label = this.type1Label;
+            Type2Label = this.type2Label;
             Dash = this;
         }
         //------------------------------------
@@ -33,14 +35,18 @@ namespace Software_Project
         public static ListView ListView1;
         public static string selectedID = ""; //When user selects Pokemon the ID is saved
         public static string selectedName = ""; //When user selects Pokemon the name is saved
+        public static string selectedType1 = ""; //When user selects Pokemon type1 is saved
+        public static string selectedType2 = ""; //When user selects Pokeomn type2 is saved
         public static Label SelectedLabelID;
         public static Label SelectedLabel;
+        public static Label Type1Label;
+        public static Label Type2Label;
         public static CustomCaughtButton cusCaughtButton = new CustomCaughtButton();
         public static CustomFavoriteButton cusFavoriteButton = new CustomFavoriteButton();
+        public static CustomShowButton cusShowButton = new CustomShowButton();
         public static Dashboard Dash;
         Controller controller = new Controller();
-        private string name;
-        private string type;
+        
 
         //------------------------------------
 
@@ -64,15 +70,15 @@ namespace Software_Project
 
         private void listView1_SelectedIndexChanged(object sender, EventArgs e) //Shows Selected Pokemon to User
         {
-            controller.dashListViewSelectChange();
+            controller.listViewSelectChange();
         }
 
         private void typeFilterBox_SelectedIndexChanged(object sender, EventArgs e) //Filter Pokemon by Type in List
         {
-            type = typeFilterBox.Text;
-            controller.clearText(2);
+            string typeSearch = typeFilterBox.Text;
+            controller.clearText();
             listView1.Items.Clear();
-            var table = controller.pokemonTypeFilter(type);
+            var table = controller.pokemonTypeFilter(typeSearch);
             controller.listViewChange(table, "Dashboard");
 
         }
@@ -82,10 +88,10 @@ namespace Software_Project
         private void searchBox_TextChanged(object sender, EventArgs e) //Search Pokemon Name
         {
             
-            name = searchBox.Text;
-            controller.clearText(2);
+            string keyword = searchBox.Text;
+            controller.clearText();
             listView1.Items.Clear();
-            var table = controller.pokemonSearch(name);
+            var table = controller.pokemonSearch(keyword);
             controller.listViewChange(table, "Dashboard");
         }
 
@@ -134,6 +140,11 @@ namespace Software_Project
             listView1.Items.Clear();
             var table = controller.showList("User_Caught");
             controller.listViewChange(table, "Dashboard");
+        }
+
+        private void showListButton_Click(object sender, EventArgs e)
+        {
+            cusShowButton.ShowDialog(); 
         }
     }
 }

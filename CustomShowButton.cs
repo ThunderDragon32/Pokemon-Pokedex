@@ -16,5 +16,72 @@ namespace Software_Project
         {
             InitializeComponent();
         }
+        Controller controller = new Controller();
+        private void showCaughtButton_Click(object sender, EventArgs e)
+        {
+            if (Application.OpenForms["Dashboard"] != null)
+            {
+                Dashboard.ListView1.Items.Clear();
+                var table = controller.showList("User_Caught");
+                controller.listViewChange(table, "Dashboard");
+            }
+            else
+            {
+
+                User_Homepage.ListView1.Items.Clear();
+                var table = controller.showList("User_Caught");
+                controller.listViewChange(table, "User_Homepage");
+
+            }
+            this.Close();
+
+
+        }
+
+        private void showFavoriteButton_Click(object sender, EventArgs e)
+        {
+            if (Application.OpenForms["Dashboard"] != null)
+            {
+                Dashboard.ListView1.Items.Clear();
+                var table = controller.showList("User_Favorite");
+                controller.listViewChange(table, "Dashboard");
+            }
+            else
+            {
+
+                User_Homepage.ListView1.Items.Clear();
+                var table = controller.showList("User_Favorite");
+                controller.listViewChange(table, "User_Homepage");
+
+            }
+            this.Close();
+        }
+
+        private void cancelButton_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void CustomShowButton_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void closeDialog_Click(object sender, EventArgs e)
+        {
+            if (Application.OpenForms["Dashboard"] != null)
+            {
+                Dashboard.SelectedLabel.Text = "";
+                Dashboard.SelectedLabelID.Text = "";
+            }
+            else
+            {
+
+                User_Homepage.SelectedLabel.Text = "";
+                User_Homepage.SelectedLabelID.Text = "";
+
+            }
+            this.Close();
+        }
     }
 }

@@ -40,6 +40,7 @@
             this.button2 = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.exitApp = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -175,12 +176,27 @@
             this.label6.Text = "Back to LOG IN";
             this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
-            // frmRegister
+            // exitApp
+            // 
+            this.exitApp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
+            this.exitApp.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.exitApp.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.exitApp.ForeColor = System.Drawing.Color.White;
+            this.exitApp.Location = new System.Drawing.Point(254, 0);
+            this.exitApp.Name = "exitApp";
+            this.exitApp.Size = new System.Drawing.Size(32, 31);
+            this.exitApp.TabIndex = 19;
+            this.exitApp.Text = "X";
+            this.exitApp.UseVisualStyleBackColor = false;
+            this.exitApp.Click += new System.EventHandler(this.exitApp_Click);
+            // 
+            // FrmRegister
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(285, 544);
+            this.Controls.Add(this.exitApp);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.button2);
@@ -197,7 +213,7 @@
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(165)))), ((int)(((byte)(169)))));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "frmRegister";
+            this.Name = "FrmRegister";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.frmRegister_Load);
@@ -220,6 +236,7 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button exitApp;
     }
 }
 

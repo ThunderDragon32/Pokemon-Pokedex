@@ -40,12 +40,11 @@
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.showCaughtList = new System.Windows.Forms.Button();
             this.favoriteButton = new System.Windows.Forms.Button();
             this.selectedPokemon = new System.Windows.Forms.Label();
             this.selectedPokemonID = new System.Windows.Forms.Label();
             this.searchPageButton = new System.Windows.Forms.Button();
-            this.favoriteListButton = new System.Windows.Forms.Button();
+            this.showListButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -117,7 +116,7 @@
             // 
             // logoutButton
             // 
-            this.logoutButton.Location = new System.Drawing.Point(713, 12);
+            this.logoutButton.Location = new System.Drawing.Point(726, 0);
             this.logoutButton.Name = "logoutButton";
             this.logoutButton.Size = new System.Drawing.Size(93, 34);
             this.logoutButton.TabIndex = 13;
@@ -164,19 +163,9 @@
             this.columnHeader4.Text = "Type2";
             this.columnHeader4.Width = 70;
             // 
-            // showCaughtList
-            // 
-            this.showCaughtList.Location = new System.Drawing.Point(632, 484);
-            this.showCaughtList.Name = "showCaughtList";
-            this.showCaughtList.Size = new System.Drawing.Size(143, 37);
-            this.showCaughtList.TabIndex = 15;
-            this.showCaughtList.Text = "Show Caught";
-            this.showCaughtList.UseVisualStyleBackColor = true;
-            this.showCaughtList.Click += new System.EventHandler(this.showCaughtList_Click);
-            // 
             // favoriteButton
             // 
-            this.favoriteButton.Location = new System.Drawing.Point(519, 427);
+            this.favoriteButton.Location = new System.Drawing.Point(546, 427);
             this.favoriteButton.Name = "favoriteButton";
             this.favoriteButton.Size = new System.Drawing.Size(105, 37);
             this.favoriteButton.TabIndex = 16;
@@ -204,35 +193,35 @@
             // 
             // searchPageButton
             // 
-            this.searchPageButton.Location = new System.Drawing.Point(632, 367);
+            this.searchPageButton.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.searchPageButton.Location = new System.Drawing.Point(670, 368);
             this.searchPageButton.Name = "searchPageButton";
-            this.searchPageButton.Size = new System.Drawing.Size(143, 37);
+            this.searchPageButton.Size = new System.Drawing.Size(105, 37);
             this.searchPageButton.TabIndex = 19;
             this.searchPageButton.Text = "Search Page";
             this.searchPageButton.UseVisualStyleBackColor = true;
             this.searchPageButton.Click += new System.EventHandler(this.searchPageButton_Click);
             // 
-            // favoriteListButton
+            // showListButton
             // 
-            this.favoriteListButton.Location = new System.Drawing.Point(632, 427);
-            this.favoriteListButton.Name = "favoriteListButton";
-            this.favoriteListButton.Size = new System.Drawing.Size(143, 37);
-            this.favoriteListButton.TabIndex = 20;
-            this.favoriteListButton.Text = "Show Favorite";
-            this.favoriteListButton.UseVisualStyleBackColor = true;
-            this.favoriteListButton.Click += new System.EventHandler(this.favoriteListButton_Click);
+            this.showListButton.Location = new System.Drawing.Point(669, 427);
+            this.showListButton.Name = "showListButton";
+            this.showListButton.Size = new System.Drawing.Size(106, 37);
+            this.showListButton.TabIndex = 20;
+            this.showListButton.Text = "Show List";
+            this.showListButton.UseVisualStyleBackColor = true;
+            this.showListButton.Click += new System.EventHandler(this.showListButton_Click);
             // 
             // User_Homepage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(818, 647);
-            this.Controls.Add(this.favoriteListButton);
+            this.Controls.Add(this.showListButton);
             this.Controls.Add(this.searchPageButton);
             this.Controls.Add(this.selectedPokemonID);
             this.Controls.Add(this.selectedPokemon);
             this.Controls.Add(this.favoriteButton);
-            this.Controls.Add(this.showCaughtList);
             this.Controls.Add(this.listView1);
             this.Controls.Add(this.logoutButton);
             this.Controls.Add(this.pictureBox6);
@@ -275,11 +264,10 @@
         private System.Windows.Forms.ColumnHeader columnHeader2;
         private System.Windows.Forms.ColumnHeader columnHeader3;
         private System.Windows.Forms.ColumnHeader columnHeader4;
-        private System.Windows.Forms.Button showCaughtList;
         private System.Windows.Forms.Button favoriteButton;
         private System.Windows.Forms.Label selectedPokemon;
         private System.Windows.Forms.Label selectedPokemonID;
         private System.Windows.Forms.Button searchPageButton;
-        private System.Windows.Forms.Button favoriteListButton;
+        private System.Windows.Forms.Button showListButton;
     }
 }

@@ -45,12 +45,12 @@ namespace Software_Project
 
         private void button2_Click(object sender, EventArgs e)
         {
-            controller.clearText(0);
+            controller.clearText();
         }
 
         private void CheckbxShowPas_CheckedChanged(object sender, EventArgs e)
         {
-            controller.checkbxShowPas(0);
+            controller.checkbxShowPas();
         }
 
         private void label6_Click(object sender, EventArgs e)
@@ -63,8 +63,8 @@ namespace Software_Project
         {
 
         }
-        
-        public void CloseForm()
+
+        public void exitApp_Click(object sender, EventArgs e)
         {
             this.Close();
         }

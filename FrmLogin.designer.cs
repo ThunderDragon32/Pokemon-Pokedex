@@ -38,6 +38,7 @@
             this.txtUsername = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.exitApp = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label6
@@ -154,12 +155,27 @@
             this.label1.Text = "Get Started";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // frmLogin
+            // exitApp
+            // 
+            this.exitApp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
+            this.exitApp.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.exitApp.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.exitApp.ForeColor = System.Drawing.Color.White;
+            this.exitApp.Location = new System.Drawing.Point(258, -1);
+            this.exitApp.Name = "exitApp";
+            this.exitApp.Size = new System.Drawing.Size(32, 31);
+            this.exitApp.TabIndex = 18;
+            this.exitApp.Text = "X";
+            this.exitApp.UseVisualStyleBackColor = false;
+            this.exitApp.Click += new System.EventHandler(this.exitApp_Click);
+            // 
+            // FrmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(289, 489);
+            this.Controls.Add(this.exitApp);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.button2);
@@ -174,7 +190,7 @@
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(165)))), ((int)(((byte)(169)))));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "frmLogin";
+            this.Name = "FrmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmLogin";
             this.Load += new System.EventHandler(this.frmLogin_Load);
@@ -195,5 +211,6 @@
         private System.Windows.Forms.TextBox txtUsername;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button exitApp;
     }
 }
