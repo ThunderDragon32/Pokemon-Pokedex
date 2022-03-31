@@ -49,12 +49,12 @@
             this.descLabel = new System.Windows.Forms.Label();
             this.type1Label = new System.Windows.Forms.Label();
             this.type2Label = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.type1PicBx = new System.Windows.Forms.PictureBox();
+            this.type2PicBx = new System.Windows.Forms.PictureBox();
+            this.pokemonPic = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.type1PicBx)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.type2PicBx)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pokemonPic)).BeginInit();
             this.SuspendLayout();
             // 
             // listView1
@@ -130,9 +130,8 @@
             this.selectedLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
             this.selectedLabel.Location = new System.Drawing.Point(416, 76);
             this.selectedLabel.Name = "selectedLabel";
-            this.selectedLabel.Size = new System.Drawing.Size(95, 32);
+            this.selectedLabel.Size = new System.Drawing.Size(0, 32);
             this.selectedLabel.TabIndex = 3;
-            this.selectedLabel.Text = "Name";
             this.selectedLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label3
@@ -239,7 +238,7 @@
             this.descLabel.Name = "descLabel";
             this.descLabel.Size = new System.Drawing.Size(400, 50);
             this.descLabel.TabIndex = 18;
-            this.descLabel.Text = "Desc";
+            this.descLabel.Visible = false;
             // 
             // type1Label
             // 
@@ -259,39 +258,38 @@
             this.type2Label.TabIndex = 21;
             this.type2Label.Text = "Type2";
             // 
-            // pictureBox3
+            // type1PicBx
             // 
-            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox3.Image = global::Software_Project.Properties.Resources.fireType;
-            this.pictureBox3.Location = new System.Drawing.Point(416, 123);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(83, 40);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 22;
-            this.pictureBox3.TabStop = false;
-            this.pictureBox3.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.type1PicBx.BackColor = System.Drawing.Color.Transparent;
+            this.type1PicBx.Location = new System.Drawing.Point(422, 121);
+            this.type1PicBx.Name = "type1PicBx";
+            this.type1PicBx.Size = new System.Drawing.Size(83, 40);
+            this.type1PicBx.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.type1PicBx.TabIndex = 22;
+            this.type1PicBx.TabStop = false;
+            this.type1PicBx.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // pictureBox1
+            // type2PicBx
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = global::Software_Project.Properties.Resources.flyingType;
-            this.pictureBox1.Location = new System.Drawing.Point(517, 123);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(83, 40);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 22;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.type2PicBx.BackColor = System.Drawing.Color.Transparent;
+            this.type2PicBx.Location = new System.Drawing.Point(511, 121);
+            this.type2PicBx.Name = "type2PicBx";
+            this.type2PicBx.Size = new System.Drawing.Size(83, 40);
+            this.type2PicBx.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.type2PicBx.TabIndex = 22;
+            this.type2PicBx.TabStop = false;
+            this.type2PicBx.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // pictureBox2
+            // pokemonPic
             // 
-            this.pictureBox2.Image = global::Software_Project.Properties.Resources.charizard1;
-            this.pictureBox2.Location = new System.Drawing.Point(225, 38);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(181, 177);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 23;
-            this.pictureBox2.TabStop = false;
+            this.pokemonPic.ErrorImage = null;
+            this.pokemonPic.InitialImage = null;
+            this.pokemonPic.Location = new System.Drawing.Point(225, 38);
+            this.pokemonPic.Name = "pokemonPic";
+            this.pokemonPic.Size = new System.Drawing.Size(181, 177);
+            this.pokemonPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pokemonPic.TabIndex = 23;
+            this.pokemonPic.TabStop = false;
             // 
             // Dashboard
             // 
@@ -299,8 +297,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(818, 647);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.type1PicBx);
+            this.Controls.Add(this.type2PicBx);
             this.Controls.Add(this.type2Label);
             this.Controls.Add(this.type1Label);
             this.Controls.Add(this.descLabel);
@@ -317,7 +315,7 @@
             this.Controls.Add(this.caughtButton);
             this.Controls.Add(this.currentUser);
             this.Controls.Add(this.listView1);
-            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.pokemonPic);
             this.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.SystemColors.ActiveCaption;
@@ -327,9 +325,9 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Filter";
             this.Load += new System.EventHandler(this.dashboard_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.type1PicBx)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.type2PicBx)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pokemonPic)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -357,8 +355,8 @@
         private System.Windows.Forms.Label type1Label;
         private System.Windows.Forms.Label type2Label;
         private System.Windows.Forms.ColumnHeader columnHeader5;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox type2PicBx;
+        private System.Windows.Forms.PictureBox type1PicBx;
+        private System.Windows.Forms.PictureBox pokemonPic;
     }
 }

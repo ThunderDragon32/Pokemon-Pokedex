@@ -24,10 +24,12 @@ namespace Software_Project
             Label1 = this.currentUser;
             ListView1 = this.listView1;
             SelectedLabel = this.selectedLabel;
-            
             Type1Label = this.type1Label;
             Type2Label = this.type2Label;
             DescLabel = this.descLabel;
+            Type1PicBx = this.type1PicBx;
+            Type2PicBx = this.type2PicBx;
+            PokemonPic = this.pokemonPic;
             Dash = this;
         }
         //------------------------------------
@@ -38,6 +40,9 @@ namespace Software_Project
         public static Label Type1Label; //selected Pokeomn's Type 1 is labled
         public static Label Type2Label; //Selected Pokemon's Type 2 is labled 
         public static Label DescLabel; //Selected Pokemon Desc is labled
+        public static PictureBox Type1PicBx;
+        public static PictureBox Type2PicBx;
+        public static PictureBox PokemonPic;
         public static CustomCaughtButton cusCaughtButton = new CustomCaughtButton();
         public static CustomFavoriteButton cusFavoriteButton = new CustomFavoriteButton();
         public static CustomShowButton cusShowButton = new CustomShowButton();

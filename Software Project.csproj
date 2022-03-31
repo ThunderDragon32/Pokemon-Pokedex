@@ -192,9 +192,6 @@
     <None Include="Resources\normal.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\charizard.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\charizard1.png" />
   </ItemGroup>
   <ItemGroup>
@@ -202,6 +199,54 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\flyingType.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\electricType.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fightingType.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\grassType.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\groundType.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iceType.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\poisonType.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rockType.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\waterType.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bugType.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\darkType.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dragonType.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fairyType.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ghostType.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\psychicType.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\steelType.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Type.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

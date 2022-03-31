@@ -84,6 +84,7 @@ namespace Software_Project
                 Dashboard.Type1Label.Text = "";
                 Dashboard.Type2Label.Text = "";
                 Dashboard.DescLabel.Text = "";
+                Dashboard.DescLabel.Visible = false;
              
             }
             else if(Application.OpenForms["User_Homepage"] != null)
@@ -153,6 +154,8 @@ namespace Software_Project
                     Dashboard.Type2Label.Text = Dashboard.ListView1.SelectedItems[0].SubItems[3].Text;
                     Dashboard.DescLabel.Text = Dashboard.ListView1.SelectedItems[0].SubItems[4].Text;
                     Dashboard.SelectedLabel.Text = "No." + selectedID + " " + selectedName;
+                    Dashboard.DescLabel.Visible = true; 
+                    imageTypeUpdate();
                 }
             }
             else { 
@@ -339,6 +342,62 @@ namespace Software_Project
                 e.Cancel = true;
                 e.NewWidth = Dashboard.ListView1.Columns[e.ColumnIndex].Width;
             }
+        }
+        public void imageTypeUpdate()
+        {
+            String[] types = new string[2];
+            string type1 = Dashboard.ListView1.SelectedItems[0].SubItems[2].Text;
+            string type2 = Dashboard.ListView1.SelectedItems[0].SubItems[3].Text;
+            types[0] = type1;
+            types[1] = type2;
+            Dashboard.PokemonPic.ImageLocation = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/" + selectedID+".png";
+            for (int i = 0; i < types.Length; i++)
+            { 
+                if (types[i] == "Water")
+                {
+                    if(i == 0) Dashboard.Type1PicBx.Image = Software_Project.Properties.Resources.waterType;
+                    else Dashboard.Type2PicBx.Image = Software_Project.Properties.Resources.waterType;
+                    
+                }
+                else if(types[i] == "Fire")
+                {
+                    if (i == 0) Dashboard.Type1PicBx.Image = Software_Project.Properties.Resources.fireType;
+                    
+                    else Dashboard.Type2PicBx.Image = Software_Project.Properties.Resources.fireType;
+                    
+                }
+                else if(types[i] == "Grass")
+                {
+                    if (i == 0) Dashboard.Type1PicBx.Image = Software_Project.Properties.Resources.grassType;
+
+                    else Dashboard.Type2PicBx.Image = Software_Project.Properties.Resources.grassType;
+                    
+                }
+                else if (types[i] == "Flying")
+                {
+                    if (i == 0)
+                    {
+                        MessageBox.Show(types[i]);
+                        Dashboard.Type1PicBx.Image = Software_Project.Properties.Resources.flyingType;
+                    }
+
+                    else Dashboard.Type2PicBx.Image = Software_Project.Properties.Resources.flyingType;
+                    
+                }
+                else if (types[i] == "Poison")
+                {
+                    if (i == 0) Dashboard.Type1PicBx.Image = Software_Project.Properties.Resources.poisonType;
+
+                    else Dashboard.Type2PicBx.Image = Software_Project.Properties.Resources.poisonType;
+                    
+                }
+                else
+                {
+                    Dashboard.Type2PicBx.Image = Software_Project.Properties.Resources.Type;
+                }
+
+            }
+
         }
     }
 }
