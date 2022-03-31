@@ -36,8 +36,7 @@ namespace Software_Project
 
         private void button3_Click(object sender, EventArgs e) //Cancel Button
         {
-            Dashboard.SelectedLabel.Text = "";
-            Dashboard.SelectedLabelID.Text = "";
+            controller.clearText();
             this.Close();
         }
 

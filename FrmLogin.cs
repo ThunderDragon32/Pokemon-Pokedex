@@ -56,6 +56,7 @@ namespace Software_Project
         private void label6_Click(object sender, EventArgs e)
         {
             new FrmRegister().Show();
+            controller.clearText();
             this.Hide();
         }
 
@@ -63,7 +64,6 @@ namespace Software_Project
         {
 
         }
-
         public void exitApp_Click(object sender, EventArgs e)
         {
             this.Close();

@@ -17,6 +17,11 @@ namespace Software_Project
             InitializeComponent();
         }
         Controller controller = new Controller();
+
+        private void CustomShowButton_Load(object sender, EventArgs e)
+        {
+
+        }
         private void showCaughtButton_Click(object sender, EventArgs e)
         {
             if (Application.OpenForms["Dashboard"] != null)
@@ -33,6 +38,7 @@ namespace Software_Project
                 controller.listViewChange(table, "User_Homepage");
 
             }
+            controller.clearText();
             this.Close();
 
 
@@ -54,33 +60,35 @@ namespace Software_Project
                 controller.listViewChange(table, "User_Homepage");
 
             }
+            controller.clearText();
             this.Close();
         }
 
-        private void cancelButton_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void CustomShowButton_Load(object sender, EventArgs e)
-        {
-
-        }
+        
 
         private void closeDialog_Click(object sender, EventArgs e)
         {
+            controller.clearText();
+            this.Close();
+        }
+
+        private void uncaughtListButton_Click(object sender, EventArgs e)
+        {
             if (Application.OpenForms["Dashboard"] != null)
             {
-                Dashboard.SelectedLabel.Text = "";
-                Dashboard.SelectedLabelID.Text = "";
+
+
+                Dashboard.ListView1.Items.Clear();
+                var table = controller.showUnCaughtList();
+                controller.listViewChange(table, "Dashboard");
             }
             else
             {
-
-                User_Homepage.SelectedLabel.Text = "";
-                User_Homepage.SelectedLabelID.Text = "";
-
+                User_Homepage.ListView1.Items.Clear();
+                var table = controller.showUnCaughtList();
+                controller.listViewChange(table, "User_Homepage");
             }
+            controller.clearText();
             this.Close();
         }
     }

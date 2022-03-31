@@ -33,25 +33,28 @@
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.currentUser = new System.Windows.Forms.Label();
             this.caughtButton = new System.Windows.Forms.Button();
             this.selectedLabel = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.typeFilterBox = new System.Windows.Forms.ComboBox();
             this.searchBox = new System.Windows.Forms.TextBox();
-            this.selectedLabelID = new System.Windows.Forms.Label();
             this.favoriteButton = new System.Windows.Forms.Button();
             this.logoutButton = new System.Windows.Forms.Button();
             this.userPageButton = new System.Windows.Forms.Button();
             this.showListButton = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.descLabel = new System.Windows.Forms.Label();
             this.type1Label = new System.Windows.Forms.Label();
             this.type2Label = new System.Windows.Forms.Label();
-            this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // listView1
@@ -72,6 +75,7 @@
             this.listView1.TabIndex = 0;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
+            this.listView1.ColumnWidthChanging += new System.Windows.Forms.ColumnWidthChangingEventHandler(this.listView1_ColumnWidthChanging);
             this.listView1.SelectedIndexChanged += new System.EventHandler(this.listView1_SelectedIndexChanged);
             // 
             // columnHeader1
@@ -94,10 +98,15 @@
             this.columnHeader4.Text = "Type2";
             this.columnHeader4.Width = 70;
             // 
+            // columnHeader5
+            // 
+            this.columnHeader5.Text = "";
+            this.columnHeader5.Width = 0;
+            // 
             // currentUser
             // 
             this.currentUser.AutoSize = true;
-            this.currentUser.Location = new System.Drawing.Point(332, 9);
+            this.currentUser.Location = new System.Drawing.Point(608, 45);
             this.currentUser.Name = "currentUser";
             this.currentUser.Size = new System.Drawing.Size(0, 23);
             this.currentUser.TabIndex = 1;
@@ -117,11 +126,11 @@
             // 
             this.selectedLabel.AutoSize = true;
             this.selectedLabel.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.selectedLabel.Font = new System.Drawing.Font("Cooper Black", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.selectedLabel.ForeColor = System.Drawing.Color.Red;
-            this.selectedLabel.Location = new System.Drawing.Point(468, 45);
+            this.selectedLabel.Font = new System.Drawing.Font("Cooper Black", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.selectedLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
+            this.selectedLabel.Location = new System.Drawing.Point(416, 76);
             this.selectedLabel.Name = "selectedLabel";
-            this.selectedLabel.Size = new System.Drawing.Size(68, 23);
+            this.selectedLabel.Size = new System.Drawing.Size(95, 32);
             this.selectedLabel.TabIndex = 3;
             this.selectedLabel.Text = "Name";
             this.selectedLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -151,21 +160,12 @@
             // searchBox
             // 
             this.searchBox.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.searchBox.Location = new System.Drawing.Point(219, 310);
+            this.searchBox.Location = new System.Drawing.Point(225, 310);
             this.searchBox.Name = "searchBox";
-            this.searchBox.Size = new System.Drawing.Size(317, 30);
+            this.searchBox.Size = new System.Drawing.Size(400, 30);
             this.searchBox.TabIndex = 6;
             this.searchBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.searchBox.TextChanged += new System.EventHandler(this.searchBox_TextChanged);
-            // 
-            // selectedLabelID
-            // 
-            this.selectedLabelID.AutoSize = true;
-            this.selectedLabelID.Location = new System.Drawing.Point(412, 45);
-            this.selectedLabelID.Name = "selectedLabelID";
-            this.selectedLabelID.Size = new System.Drawing.Size(28, 23);
-            this.selectedLabelID.TabIndex = 7;
-            this.selectedLabelID.Text = "ID";
             // 
             // favoriteButton
             // 
@@ -179,19 +179,22 @@
             // 
             // logoutButton
             // 
-            this.logoutButton.Location = new System.Drawing.Point(726, -2);
+            this.logoutButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
+            this.logoutButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.logoutButton.ForeColor = System.Drawing.Color.White;
+            this.logoutButton.Location = new System.Drawing.Point(725, 0);
             this.logoutButton.Name = "logoutButton";
             this.logoutButton.Size = new System.Drawing.Size(93, 34);
             this.logoutButton.TabIndex = 12;
             this.logoutButton.Text = "Logout";
-            this.logoutButton.UseVisualStyleBackColor = true;
+            this.logoutButton.UseVisualStyleBackColor = false;
             this.logoutButton.Click += new System.EventHandler(this.logoutButton_Click);
             // 
             // userPageButton
             // 
-            this.userPageButton.Location = new System.Drawing.Point(658, 310);
+            this.userPageButton.Location = new System.Drawing.Point(604, 0);
             this.userPageButton.Name = "userPageButton";
-            this.userPageButton.Size = new System.Drawing.Size(108, 31);
+            this.userPageButton.Size = new System.Drawing.Size(108, 34);
             this.userPageButton.TabIndex = 13;
             this.userPageButton.Text = "User Page";
             this.userPageButton.UseVisualStyleBackColor = true;
@@ -199,7 +202,7 @@
             // 
             // showListButton
             // 
-            this.showListButton.Location = new System.Drawing.Point(546, 310);
+            this.showListButton.Location = new System.Drawing.Point(658, 330);
             this.showListButton.Name = "showListButton";
             this.showListButton.Size = new System.Drawing.Size(106, 31);
             this.showListButton.TabIndex = 15;
@@ -219,33 +222,29 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(345, 284);
+            this.label4.Location = new System.Drawing.Point(377, 284);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(95, 23);
             this.label4.TabIndex = 17;
             this.label4.Text = "Search Bar";
             // 
-            // label5
+            // descLabel
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(412, 125);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(47, 23);
-            this.label5.TabIndex = 18;
-            this.label5.Text = "Desc";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(154, 45);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(235, 179);
-            this.pictureBox1.TabIndex = 19;
-            this.pictureBox1.TabStop = false;
+            this.descLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
+            this.descLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.descLabel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.descLabel.ForeColor = System.Drawing.Color.White;
+            this.descLabel.Location = new System.Drawing.Point(225, 221);
+            this.descLabel.MaximumSize = new System.Drawing.Size(400, 50);
+            this.descLabel.Name = "descLabel";
+            this.descLabel.Size = new System.Drawing.Size(400, 50);
+            this.descLabel.TabIndex = 18;
+            this.descLabel.Text = "Desc";
             // 
             // type1Label
             // 
             this.type1Label.AutoSize = true;
-            this.type1Label.Location = new System.Drawing.Point(412, 85);
+            this.type1Label.Location = new System.Drawing.Point(558, 469);
             this.type1Label.Name = "type1Label";
             this.type1Label.Size = new System.Drawing.Size(58, 23);
             this.type1Label.TabIndex = 20;
@@ -254,16 +253,45 @@
             // type2Label
             // 
             this.type2Label.AutoSize = true;
-            this.type2Label.Location = new System.Drawing.Point(478, 85);
+            this.type2Label.Location = new System.Drawing.Point(634, 469);
             this.type2Label.Name = "type2Label";
             this.type2Label.Size = new System.Drawing.Size(58, 23);
             this.type2Label.TabIndex = 21;
             this.type2Label.Text = "Type2";
             // 
-            // columnHeader5
+            // pictureBox3
             // 
-            this.columnHeader5.Text = "";
-            this.columnHeader5.Width = 0;
+            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox3.Image = global::Software_Project.Properties.Resources.fireType;
+            this.pictureBox3.Location = new System.Drawing.Point(416, 123);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(83, 40);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 22;
+            this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = global::Software_Project.Properties.Resources.flyingType;
+            this.pictureBox1.Location = new System.Drawing.Point(517, 123);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(83, 40);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 22;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::Software_Project.Properties.Resources.charizard1;
+            this.pictureBox2.Location = new System.Drawing.Point(225, 38);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(181, 177);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 23;
+            this.pictureBox2.TabStop = false;
             // 
             // Dashboard
             // 
@@ -271,17 +299,17 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(818, 647);
+            this.Controls.Add(this.pictureBox3);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.type2Label);
             this.Controls.Add(this.type1Label);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.label5);
+            this.Controls.Add(this.descLabel);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.showListButton);
             this.Controls.Add(this.userPageButton);
             this.Controls.Add(this.logoutButton);
             this.Controls.Add(this.favoriteButton);
-            this.Controls.Add(this.selectedLabelID);
             this.Controls.Add(this.searchBox);
             this.Controls.Add(this.typeFilterBox);
             this.Controls.Add(this.label3);
@@ -289,6 +317,7 @@
             this.Controls.Add(this.caughtButton);
             this.Controls.Add(this.currentUser);
             this.Controls.Add(this.listView1);
+            this.Controls.Add(this.pictureBox2);
             this.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.SystemColors.ActiveCaption;
@@ -298,7 +327,9 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Filter";
             this.Load += new System.EventHandler(this.dashboard_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -316,17 +347,18 @@
         private System.Windows.Forms.ColumnHeader columnHeader4;
         private System.Windows.Forms.ComboBox typeFilterBox;
         private System.Windows.Forms.TextBox searchBox;
-        public System.Windows.Forms.Label selectedLabelID;
         private System.Windows.Forms.Button favoriteButton;
         private System.Windows.Forms.Button logoutButton;
         private System.Windows.Forms.Button userPageButton;
         private System.Windows.Forms.Button showListButton;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label descLabel;
         private System.Windows.Forms.Label type1Label;
         private System.Windows.Forms.Label type2Label;
         private System.Windows.Forms.ColumnHeader columnHeader5;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

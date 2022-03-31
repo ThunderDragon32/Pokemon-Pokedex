@@ -49,8 +49,9 @@ namespace Software_Project
 
         private void label6_Click(object sender, EventArgs e)
         {
-            new FrmLogin().Show();
+            FrmLogin.FrmLog.Show();
             this.Close();
+            controller.clearText();
         }
 
         private void frmRegister_Load(object sender, EventArgs e)

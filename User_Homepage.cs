@@ -24,19 +24,14 @@ namespace Software_Project
         public static CustomCaughtButton cusCaughtButton = new CustomCaughtButton();
         public static CustomFavoriteButton cusFavoriteButton = new CustomFavoriteButton();
         public static CustomShowButton cusShowButton = new CustomShowButton();
-        public static string selectedID = ""; //When user selects Pokemon the ID is saved
-        public static string selectedName = ""; //When user selects Pokemon the name is saved
         public static Label SelectedLabelID;
         public static Label SelectedLabel;
         Controller controller = new Controller();
         //----------------
-        private void logoutButton_Click(object sender, EventArgs e)
+        private void User_Homepage_Load(object sender, EventArgs e)
         {
-            new FrmLogin().Show();
-            listView1.Items.Clear();
-            this.Close();
-        }
 
+        }
         private void favoriteButton_Click(object sender, EventArgs e)
         {
             cusFavoriteButton.ShowDialog();
@@ -70,10 +65,7 @@ namespace Software_Project
             controller.listViewChange(table, "User_Homepage");
         }
 
-        private void User_Homepage_Load(object sender, EventArgs e)
-        {
-
-        }
+        
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
@@ -83,6 +75,12 @@ namespace Software_Project
         private void showListButton_Click(object sender, EventArgs e)
         {
             cusShowButton.ShowDialog();
+        }
+        private void logoutButton_Click_1(object sender, EventArgs e)
+        {
+            FrmLogin.FrmLog.Show();
+            listView1.Items.Clear();
+            this.Close();
         }
     }
 }

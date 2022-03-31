@@ -12,47 +12,44 @@ using System.Windows.Forms;
 namespace Software_Project
 
 {
-    
+
     public partial class Dashboard : Form
-    {                     
-        
-        
+    {
+
+
         public Dashboard()
         {
             InitializeComponent();
-     
+
             Label1 = this.currentUser;
             ListView1 = this.listView1;
             SelectedLabel = this.selectedLabel;
-            SelectedLabelID = this.selectedLabelID;
+            
             Type1Label = this.type1Label;
             Type2Label = this.type2Label;
+            DescLabel = this.descLabel;
             Dash = this;
         }
         //------------------------------------
-        
+
         public static Label Label1;
         public static ListView ListView1;
-        public static string selectedID = ""; //When user selects Pokemon the ID is saved
-        public static string selectedName = ""; //When user selects Pokemon the name is saved
-        public static string selectedType1 = ""; //When user selects Pokemon type1 is saved
-        public static string selectedType2 = ""; //When user selects Pokeomn type2 is saved
-        public static Label SelectedLabelID;
-        public static Label SelectedLabel;
-        public static Label Type1Label;
-        public static Label Type2Label;
+        public static Label SelectedLabel; //Selected Pokemon name and ID are labeled
+        public static Label Type1Label; //selected Pokeomn's Type 1 is labled
+        public static Label Type2Label; //Selected Pokemon's Type 2 is labled 
+        public static Label DescLabel; //Selected Pokemon Desc is labled
         public static CustomCaughtButton cusCaughtButton = new CustomCaughtButton();
         public static CustomFavoriteButton cusFavoriteButton = new CustomFavoriteButton();
         public static CustomShowButton cusShowButton = new CustomShowButton();
         public static Dashboard Dash;
         Controller controller = new Controller();
-        
+
 
         //------------------------------------
 
-        private void dashboard_Load(object sender, EventArgs e) 
+        private void dashboard_Load(object sender, EventArgs e)
         {
-            
+
             var table = controller.pokemonTypeFilter("ALL TYPES"); //Loads Pokemon Database for user
             Label1.Text = "Current User: " + FrmLogin.name;
             controller.listViewChange(table, "Dashboard");
@@ -65,7 +62,7 @@ namespace Software_Project
         }
         private void favoriteButton_Click(object sender, EventArgs e)
         {
-           cusFavoriteButton.ShowDialog();
+            cusFavoriteButton.ShowDialog();
         }
 
         private void listView1_SelectedIndexChanged(object sender, EventArgs e) //Shows Selected Pokemon to User
@@ -87,7 +84,7 @@ namespace Software_Project
 
         private void searchBox_TextChanged(object sender, EventArgs e) //Search Pokemon Name
         {
-            
+
             string keyword = searchBox.Text;
             controller.clearText();
             listView1.Items.Clear();
@@ -99,30 +96,9 @@ namespace Software_Project
         {
         }
 
-        //private void caughtListButton_Click(object sender, EventArgs e)
-        //{
-        //    listView1.Items.Clear();
-        //    var table = controller.showList("User_Caught");
-        //    controller.listViewChange(table);
-        //}
-
-        //private void UnCaughtButton_Click(object sender, EventArgs e)
-        //{
-        //    listView1.Items.Clear();
-        //    var table = controller.showUnCaughtList();
-        //    controller.listViewChange(table);
-        //}
-
-        //private void showFavoriteButton_Click(object sender, EventArgs e)
-        //{
-        //    listView1.Items.Clear();
-        //    var table = controller.showList("User_Favorite");
-        //    controller.listViewChange(table);
-        //}
-
         private void logoutButton_Click(object sender, EventArgs e)
         {
-            new FrmLogin().Show();
+            FrmLogin.FrmLog.Show();
             listView1.Items.Clear();
             this.Close();
         }
@@ -132,7 +108,7 @@ namespace Software_Project
             new User_Homepage().Show();
             listView1.Items.Clear();
             this.Close();
-            
+
         }
 
         private void showCaught_Click(object sender, EventArgs e)
@@ -144,7 +120,17 @@ namespace Software_Project
 
         private void showListButton_Click(object sender, EventArgs e)
         {
-            cusShowButton.ShowDialog(); 
+            cusShowButton.ShowDialog();
+        }
+
+        private void listView1_ColumnWidthChanging(object sender, ColumnWidthChangingEventArgs e)
+        {
+            controller.listViewColumnLock(e);
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

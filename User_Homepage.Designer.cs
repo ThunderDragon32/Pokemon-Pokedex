@@ -34,7 +34,6 @@
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.logoutButton = new System.Windows.Forms.Button();
             this.listView1 = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -45,6 +44,7 @@
             this.selectedPokemonID = new System.Windows.Forms.Label();
             this.searchPageButton = new System.Windows.Forms.Button();
             this.showListButton = new System.Windows.Forms.Button();
+            this.logoutButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -55,7 +55,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::Software_Project.Properties.Resources.charizard;
+            this.pictureBox1.BackColor = System.Drawing.Color.Black;
             this.pictureBox1.Location = new System.Drawing.Point(23, 88);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(105, 105);
@@ -66,7 +66,7 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = global::Software_Project.Properties.Resources.charizard;
+            this.pictureBox2.BackColor = System.Drawing.Color.Black;
             this.pictureBox2.Location = new System.Drawing.Point(149, 88);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(105, 105);
@@ -76,7 +76,7 @@
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Image = global::Software_Project.Properties.Resources.charizard;
+            this.pictureBox3.BackColor = System.Drawing.Color.Black;
             this.pictureBox3.Location = new System.Drawing.Point(285, 88);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(105, 105);
@@ -86,7 +86,7 @@
             // 
             // pictureBox4
             // 
-            this.pictureBox4.Image = global::Software_Project.Properties.Resources.charizard;
+            this.pictureBox4.BackColor = System.Drawing.Color.Black;
             this.pictureBox4.Location = new System.Drawing.Point(412, 88);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(105, 105);
@@ -96,7 +96,7 @@
             // 
             // pictureBox5
             // 
-            this.pictureBox5.Image = global::Software_Project.Properties.Resources.charizard;
+            this.pictureBox5.BackColor = System.Drawing.Color.Black;
             this.pictureBox5.Location = new System.Drawing.Point(546, 88);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(105, 105);
@@ -106,23 +106,13 @@
             // 
             // pictureBox6
             // 
-            this.pictureBox6.Image = global::Software_Project.Properties.Resources.charizard;
+            this.pictureBox6.BackColor = System.Drawing.Color.Black;
             this.pictureBox6.Location = new System.Drawing.Point(670, 88);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(105, 105);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox6.TabIndex = 0;
             this.pictureBox6.TabStop = false;
-            // 
-            // logoutButton
-            // 
-            this.logoutButton.Location = new System.Drawing.Point(726, 0);
-            this.logoutButton.Name = "logoutButton";
-            this.logoutButton.Size = new System.Drawing.Size(93, 34);
-            this.logoutButton.TabIndex = 13;
-            this.logoutButton.Text = "Logout";
-            this.logoutButton.UseVisualStyleBackColor = true;
-            this.logoutButton.Click += new System.EventHandler(this.logoutButton_Click);
             // 
             // listView1
             // 
@@ -194,7 +184,7 @@
             // searchPageButton
             // 
             this.searchPageButton.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.searchPageButton.Location = new System.Drawing.Point(670, 368);
+            this.searchPageButton.Location = new System.Drawing.Point(605, -3);
             this.searchPageButton.Name = "searchPageButton";
             this.searchPageButton.Size = new System.Drawing.Size(105, 37);
             this.searchPageButton.TabIndex = 19;
@@ -212,18 +202,32 @@
             this.showListButton.UseVisualStyleBackColor = true;
             this.showListButton.Click += new System.EventHandler(this.showListButton_Click);
             // 
+            // logoutButton
+            // 
+            this.logoutButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
+            this.logoutButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.logoutButton.ForeColor = System.Drawing.Color.White;
+            this.logoutButton.Location = new System.Drawing.Point(725, 0);
+            this.logoutButton.Name = "logoutButton";
+            this.logoutButton.Size = new System.Drawing.Size(93, 34);
+            this.logoutButton.TabIndex = 21;
+            this.logoutButton.Text = "Logout";
+            this.logoutButton.UseVisualStyleBackColor = false;
+            this.logoutButton.Click += new System.EventHandler(this.logoutButton_Click_1);
+            // 
             // User_Homepage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(818, 647);
+            this.Controls.Add(this.logoutButton);
             this.Controls.Add(this.showListButton);
             this.Controls.Add(this.searchPageButton);
             this.Controls.Add(this.selectedPokemonID);
             this.Controls.Add(this.selectedPokemon);
             this.Controls.Add(this.favoriteButton);
             this.Controls.Add(this.listView1);
-            this.Controls.Add(this.logoutButton);
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.pictureBox4);
@@ -258,7 +262,6 @@
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.Button logoutButton;
         public System.Windows.Forms.ListView listView1;
         private System.Windows.Forms.ColumnHeader columnHeader1;
         private System.Windows.Forms.ColumnHeader columnHeader2;
@@ -269,5 +272,6 @@
         private System.Windows.Forms.Label selectedPokemonID;
         private System.Windows.Forms.Button searchPageButton;
         private System.Windows.Forms.Button showListButton;
+        private System.Windows.Forms.Button logoutButton;
     }
 }

@@ -13,6 +13,8 @@ namespace Software_Project
 {   
     internal class Controller
     {
+        public static string selectedName; //Selected Pokemon's name is saved stored
+        public static string selectedID; //Selected Pokemon's ID is stored
         public static Model model = new Model();
         public void verifyUserAndPass() //FrmLogin calls this method to read database for User and Pass Verification
         {
@@ -25,6 +27,7 @@ namespace Software_Project
                 //The Form which will appear after loggin in
                 FrmLogin.name = FrmLogin.TxtUsername.Text;
                 model.closeController();
+                clearText();
                 new Dashboard().Show();
                 FrmLogin.FrmLog.Hide();
             }
@@ -77,21 +80,17 @@ namespace Software_Project
             }
             else if(Application.OpenForms["Dashboard"] != null)
             {
-                Dashboard.selectedID = "";
-                Dashboard.selectedName = "";
-                Dashboard.selectedType1 = "";
-                Dashboard.selectedType2 = "";
-                Dashboard.SelectedLabel.Text = Dashboard.selectedName;
-                Dashboard.SelectedLabelID.Text = Dashboard.selectedID;
-                Dashboard.Type1Label.Text = Dashboard.selectedType1;
-                Dashboard.Type2Label.Text = Dashboard.selectedType2;
+                Dashboard.SelectedLabel.Text = "";
+                Dashboard.Type1Label.Text = "";
+                Dashboard.Type2Label.Text = "";
+                Dashboard.DescLabel.Text = "";
+             
             }
             else if(Application.OpenForms["User_Homepage"] != null)
             {
-                User_Homepage.selectedID = "";
-                User_Homepage.selectedName = "";
-                User_Homepage.SelectedLabel.Text = User_Homepage.selectedName;
-                User_Homepage.SelectedLabelID.Text = User_Homepage.selectedID;
+                User_Homepage.SelectedLabel.Text = "";
+                User_Homepage.SelectedLabelID.Text = "";
+                
             }
             else
             {
@@ -99,6 +98,8 @@ namespace Software_Project
                 FrmLogin.TxtPassword.Text = "";
                 FrmLogin.TxtUsername.Focus();
             }
+            selectedName = "";
+            selectedID = "";
         }
 
 
@@ -146,25 +147,19 @@ namespace Software_Project
             {
                 if (Dashboard.ListView1.SelectedItems.Count > 0)
                 {
-                    Dashboard.selectedName = Dashboard.ListView1.SelectedItems[0].SubItems[1].Text;
-                    Dashboard.selectedID = Dashboard.ListView1.SelectedItems[0].SubItems[0].Text;
-                    Dashboard.selectedType1 = Dashboard.ListView1.SelectedItems[0].SubItems[2].Text;
-                    Dashboard.selectedType2 = Dashboard.ListView1.SelectedItems[0].SubItems[3].Text;
-                    Dashboard.SelectedLabel.Text = Dashboard.selectedName;
-                    Dashboard.SelectedLabelID.Text = Dashboard.selectedID;
-                    Dashboard.Type1Label.Text = Dashboard.selectedType1;
-                    Dashboard.Type2Label.Text = Dashboard.selectedType2;
+                    selectedName = Dashboard.ListView1.SelectedItems[0].SubItems[1].Text; 
+                    selectedID = Dashboard.ListView1.SelectedItems[0].SubItems[0].Text;
+                    Dashboard.Type1Label.Text = Dashboard.ListView1.SelectedItems[0].SubItems[2].Text;
+                    Dashboard.Type2Label.Text = Dashboard.ListView1.SelectedItems[0].SubItems[3].Text;
+                    Dashboard.DescLabel.Text = Dashboard.ListView1.SelectedItems[0].SubItems[4].Text;
+                    Dashboard.SelectedLabel.Text = "No." + selectedID + " " + selectedName;
                 }
             }
             else { 
                 if (User_Homepage.ListView1.SelectedItems.Count > 0)
                 {
-                    User_Homepage.selectedName = User_Homepage.ListView1.SelectedItems[0].SubItems[1].Text;
-                    User_Homepage.selectedID = User_Homepage.ListView1.SelectedItems[0].SubItems[0].Text;
-                    User_Homepage.SelectedLabel.Text = User_Homepage.selectedName;
-                    User_Homepage.SelectedLabelID.Text = User_Homepage.selectedID;
-
-
+                    User_Homepage.SelectedLabel.Text = User_Homepage.ListView1.SelectedItems[0].SubItems[1].Text;
+                    User_Homepage.SelectedLabelID.Text = User_Homepage.ListView1.SelectedItems[0].SubItems[0].Text;
                 }
             }
         }
@@ -222,7 +217,7 @@ namespace Software_Project
         public void addPokemon(string database) //Adds Pokemon into a database
         {
             model.openController();  
-            string unqiueIDCheck = "SELECT * FROM " + database + " WHERE ID= '" + Dashboard.selectedID + "' and username= '" + FrmLogin.name + "'";
+            string unqiueIDCheck = "SELECT * FROM " + database + " WHERE ID= '" + selectedID + "' and username= '" + FrmLogin.name + "'";
             if (model.executeReaderCommand(model.databaseCommand(unqiueIDCheck, model.getCon())).Read() == true)
             {
                 //Pokemon is already in list
@@ -233,7 +228,7 @@ namespace Software_Project
             }
             else  ///Places Pokemon in List
             {
-                if (Dashboard.selectedID != "")
+                if (selectedID != "")
                 {
                     string amountCheck = "SELECT Count(*) FROM User_Favorite WHERE username= '" + FrmLogin.name + "'";
                     if ((database == "User_Favorite") && (Convert.ToInt16(model.databaseCommand(amountCheck, model.getCon()).ExecuteScalar()) < 6))
@@ -259,7 +254,7 @@ namespace Software_Project
         }
         public void insertPokemon(string database) //Inserts Pokemon into a specific database (Used along side AddPokemon() )
         {
-            string insertPokemon = "INSERT INTO " + database + " VALUES ('" + FrmLogin.name + "','" + Dashboard.selectedID + "')";
+            string insertPokemon = "INSERT INTO " + database + " VALUES ('" + FrmLogin.name + "','" + selectedID + "')";
             model.executeNonQueryCommand(model.databaseCommand(insertPokemon, model.getCon()));
             model.closeController();
             clearText();
@@ -268,10 +263,10 @@ namespace Software_Project
         public void removePokemon(string database) //Remove Pokemon from a database
         {
                 model.openController();
-                string unqiueIDCheck = "SELECT * FROM " + database + " WHERE ID= '" + Dashboard.selectedID + "' and username= '" + FrmLogin.name + "'";
+                string unqiueIDCheck = "SELECT * FROM " + database + " WHERE ID= '" + selectedID + "' and username= '" + FrmLogin.name + "'";
                 if (model.executeReaderCommand(model.databaseCommand(unqiueIDCheck, model.getCon())).Read() == true) //Pokemon is in list
                 {
-                    string deletePokemon = "DELETE FROM " + database + " WHERE ID= '" + Dashboard.selectedID + "' and username= '" + FrmLogin.name + "'";
+                    string deletePokemon = "DELETE FROM " + database + " WHERE ID= '" + selectedID + "' and username= '" + FrmLogin.name + "'";
                     model.executeNonQueryCommand(model.databaseCommand(deletePokemon, model.getCon()));
                     model.closeController();
                     clearText();
@@ -322,19 +317,28 @@ namespace Software_Project
         public DataTable showList(string database)
         {
             model.openController();
-            DataTable table = tableSet(model.databaseAdapter("SELECT Pokemon.ID, Pokemon.name, Pokemon.Type1, Pokemon.Type2 FROM Pokemon, " +
+            DataTable table = tableSet(model.databaseAdapter("SELECT Pokemon.ID, Pokemon.name, Pokemon.Type1, Pokemon.Type2, Pokemon.Desc FROM Pokemon, " +
                 database +" WHERE Pokemon.ID = " + database + ".ID AND " + database + ".username = '" + FrmLogin.name + "'", model.getCon()));
             return table;
 
         }
-        public DataTable showUnCaughtList() //In Progress
+        public DataTable showUnCaughtList()
         {
-
             model.openController();
-            //dat = new OleDbDataAdapter("SELECT Pokemon.ID, Pokemon.name, Pokemon.Type1, Pokemon.Type2 FROM Pokemon, " +
-            //    "User_Caught WHERE Pokemon.ID = User_Caught.ID AND User_Caught.username <> '" + frmLogin.name + "'", con);
-            DataTable table = tableSet(model.databaseAdapter("SELECT * FROM Pokemon left outer join User_Caught on Pokemon.ID = User_Caught.ID WHERE User_Caught.ID is NULL", model.getCon()));
+            DataTable table = tableSet(model.databaseAdapter("SELECT * FROM Pokemon left outer join User_Caught " +
+                "on (Pokemon.ID = User_Caught.ID and username = '" + FrmLogin.name + "') WHERE User_Caught.ID is NULL"
+                , model.getCon()));
             return table;
+        }
+
+        
+        public void listViewColumnLock(ColumnWidthChangingEventArgs e)
+        {
+            if (Dashboard.ListView1.Columns[e.ColumnIndex].ToString() == "ColumnHeader: Text: ")
+            {
+                e.Cancel = true;
+                e.NewWidth = Dashboard.ListView1.Columns[e.ColumnIndex].Width;
+            }
         }
     }
 }
