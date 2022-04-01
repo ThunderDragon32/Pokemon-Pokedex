@@ -163,6 +163,16 @@ namespace Software_Project.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap glow {
+            get {
+                object obj = ResourceManager.GetObject("glow", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap grassType {
             get {
                 object obj = ResourceManager.GetObject("grassType", resourceCulture);
@@ -226,6 +236,26 @@ namespace Software_Project.Properties {
         internal static System.Drawing.Bitmap rockType {
             get {
                 object obj = ResourceManager.GetObject("rockType", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap splash {
+            get {
+                object obj = ResourceManager.GetObject("splash", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap splash1 {
+            get {
+                object obj = ResourceManager.GetObject("splash1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 using System.Data.OleDb;
 using System.Data;
 using System.Windows.Forms;
+using System.Media;
+using System.IO;
+using System.Net;
+using NAudio.Wave;
 
 
 namespace Software_Project
@@ -15,6 +19,8 @@ namespace Software_Project
     {
         public static string selectedName; //Selected Pokemon's name is saved stored
         public static string selectedID; //Selected Pokemon's ID is stored
+        
+
         public static Model model = new Model();
         public void verifyUserAndPass() //FrmLogin calls this method to read database for User and Pass Verification
         {
@@ -81,8 +87,6 @@ namespace Software_Project
             else if(Application.OpenForms["Dashboard"] != null)
             {
                 Dashboard.SelectedLabel.Text = "";
-                Dashboard.Type1Label.Text = "";
-                Dashboard.Type2Label.Text = "";
                 Dashboard.DescLabel.Text = "";
                 Dashboard.DescLabel.Visible = false;
              
@@ -144,18 +148,30 @@ namespace Software_Project
         }
         public void listViewSelectChange() //Changes selection when user interacts with display
         {
+            SoundPlayer sound = new SoundPlayer();
+            sound.Stop();
             if (Application.OpenForms["Dashboard"] != null)
             {
                 if (Dashboard.ListView1.SelectedItems.Count > 0)
                 {
                     selectedName = Dashboard.ListView1.SelectedItems[0].SubItems[1].Text; 
                     selectedID = Dashboard.ListView1.SelectedItems[0].SubItems[0].Text;
-                    Dashboard.Type1Label.Text = Dashboard.ListView1.SelectedItems[0].SubItems[2].Text;
-                    Dashboard.Type2Label.Text = Dashboard.ListView1.SelectedItems[0].SubItems[3].Text;
                     Dashboard.DescLabel.Text = Dashboard.ListView1.SelectedItems[0].SubItems[4].Text;
                     Dashboard.SelectedLabel.Text = "No." + selectedID + " " + selectedName;
-                    Dashboard.DescLabel.Visible = true; 
+                    Dashboard.DescLabel.Visible = true;
                     imageTypeUpdate();
+                    try
+                    {
+                        //sound.Stop();
+                        sound = new SoundPlayer(selectedID + ".wav");
+                        
+                        sound.Play();
+                    }
+                    catch (Exception ex) { }
+                    
+                    
+                 
+                    //PlayMp3FromUrl("https://play.pokemonshowdown.com/audio/cries/" + selectedName.ToLower() + ".mp3");
                 }
             }
             else { 
@@ -343,7 +359,7 @@ namespace Software_Project
                 e.NewWidth = Dashboard.ListView1.Columns[e.ColumnIndex].Width;
             }
         }
-        public void imageTypeUpdate()
+        public void imageTypeUpdate() //Updates Type and Pokemon Images
         {
             String[] types = new string[2];
             string type1 = Dashboard.ListView1.SelectedItems[0].SubItems[2].Text;
@@ -357,39 +373,91 @@ namespace Software_Project
                 {
                     if(i == 0) Dashboard.Type1PicBx.Image = Software_Project.Properties.Resources.waterType;
                     else Dashboard.Type2PicBx.Image = Software_Project.Properties.Resources.waterType;
-                    
                 }
                 else if(types[i] == "Fire")
                 {
                     if (i == 0) Dashboard.Type1PicBx.Image = Software_Project.Properties.Resources.fireType;
-                    
                     else Dashboard.Type2PicBx.Image = Software_Project.Properties.Resources.fireType;
-                    
                 }
                 else if(types[i] == "Grass")
                 {
                     if (i == 0) Dashboard.Type1PicBx.Image = Software_Project.Properties.Resources.grassType;
-
                     else Dashboard.Type2PicBx.Image = Software_Project.Properties.Resources.grassType;
-                    
                 }
                 else if (types[i] == "Flying")
                 {
-                    if (i == 0)
-                    {
-                        MessageBox.Show(types[i]);
-                        Dashboard.Type1PicBx.Image = Software_Project.Properties.Resources.flyingType;
-                    }
-
+                    if (i == 0) Dashboard.Type1PicBx.Image = Software_Project.Properties.Resources.flyingType;
                     else Dashboard.Type2PicBx.Image = Software_Project.Properties.Resources.flyingType;
-                    
                 }
                 else if (types[i] == "Poison")
                 {
                     if (i == 0) Dashboard.Type1PicBx.Image = Software_Project.Properties.Resources.poisonType;
-
                     else Dashboard.Type2PicBx.Image = Software_Project.Properties.Resources.poisonType;
-                    
+                }
+                else if (types[i] == "Steel")
+                {
+                    if (i == 0) Dashboard.Type1PicBx.Image = Software_Project.Properties.Resources.steelType;
+                    else Dashboard.Type2PicBx.Image = Software_Project.Properties.Resources.steelType;
+                }
+                else if (types[i] == "Bug")
+                {
+                    if (i == 0) Dashboard.Type1PicBx.Image = Software_Project.Properties.Resources.bugType;
+                    else Dashboard.Type2PicBx.Image = Software_Project.Properties.Resources.bugType;
+                }
+                else if (types[i] == "Dark")
+                {
+                    if (i == 0) Dashboard.Type1PicBx.Image = Software_Project.Properties.Resources.darkType;
+                    else Dashboard.Type2PicBx.Image = Software_Project.Properties.Resources.darkType;
+                }
+                else if (types[i] == "Electric")
+                {
+                    if (i == 0) Dashboard.Type1PicBx.Image = Software_Project.Properties.Resources.electricType;
+                    else Dashboard.Type2PicBx.Image = Software_Project.Properties.Resources.electricType;
+                }
+                else if (types[i] == "Dragon")
+                {
+                    if (i == 0) Dashboard.Type1PicBx.Image = Software_Project.Properties.Resources.dragonType;
+                    else Dashboard.Type2PicBx.Image = Software_Project.Properties.Resources.dragonType;
+                }
+                else if (types[i] == "Fairy")
+                {
+                    if (i == 0) Dashboard.Type1PicBx.Image = Software_Project.Properties.Resources.fairyType;
+                    else Dashboard.Type2PicBx.Image = Software_Project.Properties.Resources.fairyType;
+                }
+                else if (types[i] == "Fighting")
+                {
+                    if (i == 0) Dashboard.Type1PicBx.Image = Software_Project.Properties.Resources.fightingType;
+                    else Dashboard.Type2PicBx.Image = Software_Project.Properties.Resources.fightingType;
+                }
+                else if (types[i] == "Ghost")
+                {
+                    if (i == 0) Dashboard.Type1PicBx.Image = Software_Project.Properties.Resources.ghostType;
+                    else Dashboard.Type2PicBx.Image = Software_Project.Properties.Resources.ghostType;
+                }
+                else if (types[i] == "Ground")
+                {
+                    if (i == 0) Dashboard.Type1PicBx.Image = Software_Project.Properties.Resources.groundType;
+                    else Dashboard.Type2PicBx.Image = Software_Project.Properties.Resources.groundType;
+                }
+                else if (types[i] == "Ice")
+                {
+                    if (i == 0) Dashboard.Type1PicBx.Image = Software_Project.Properties.Resources.iceType;
+                    else Dashboard.Type2PicBx.Image = Software_Project.Properties.Resources.iceType;
+                }
+                else if (types[i] == "Normal")
+                {
+                    if (i == 0) Dashboard.Type1PicBx.Image = Software_Project.Properties.Resources.normal;
+                    else Dashboard.Type2PicBx.Image = Software_Project.Properties.Resources.normal;
+                }
+                else if (types[i] == "Psychic")
+                {
+                    if (i == 0) Dashboard.Type1PicBx.Image = Software_Project.Properties.Resources.psychicType;
+                    else Dashboard.Type2PicBx.Image = Software_Project.Properties.Resources.psychicType;
+                }
+                else if (types[i] == "Rock")
+                {
+                    if (i == 0) Dashboard.Type1PicBx.Image = Software_Project.Properties.Resources.rockType;
+                    else Dashboard.Type2PicBx.Image = Software_Project.Properties.Resources.rockType;
                 }
                 else
                 {
@@ -398,6 +466,48 @@ namespace Software_Project
 
             }
 
+        }
+        public void PlayMp3FromUrl(string url)
+        {
+
+            
+
+            using (Stream ms = new MemoryStream())
+            {
+                using (Stream stream = WebRequest.Create(url)
+                    .GetResponse().GetResponseStream())
+                {
+                    byte[] buffer = new byte[32768];
+                    int read;
+                    while ((read = stream.Read(buffer, 0, buffer.Length)) > 0)
+                    {
+                        ms.Write(buffer, 0, read);
+                    }
+                }
+                
+                ms.Position = 0;
+                using (WaveStream blockAlignedStream =
+                    new BlockAlignReductionStream(
+                        WaveFormatConversionStream.CreatePcmStream(
+                            new Mp3FileReader(ms))))
+                {
+                    using (WaveOut waveOut = new WaveOut(WaveCallbackInfo.FunctionCallback()))
+                    {
+                        waveOut.Init(blockAlignedStream);
+
+                        waveOut.Play();
+
+                        while (waveOut.PlaybackState == PlaybackState.Playing)
+                        {
+                            
+                            System.Threading.Thread.Sleep(1000);
+                            
+
+                        }
+                        
+                    }
+                }
+            }
         }
     }
 }

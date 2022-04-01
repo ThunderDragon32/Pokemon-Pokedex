@@ -46,12 +46,10 @@
             this.showListButton = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.descLabel = new System.Windows.Forms.Label();
-            this.type1Label = new System.Windows.Forms.Label();
-            this.type2Label = new System.Windows.Forms.Label();
             this.type1PicBx = new System.Windows.Forms.PictureBox();
             this.type2PicBx = new System.Windows.Forms.PictureBox();
             this.pokemonPic = new System.Windows.Forms.PictureBox();
+            this.descLb = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.type1PicBx)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.type2PicBx)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pokemonPic)).BeginInit();
@@ -59,6 +57,7 @@
             // 
             // listView1
             // 
+            this.listView1.BackColor = System.Drawing.Color.AliceBlue;
             this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader1,
             this.columnHeader2,
@@ -77,6 +76,7 @@
             this.listView1.View = System.Windows.Forms.View.Details;
             this.listView1.ColumnWidthChanging += new System.Windows.Forms.ColumnWidthChangingEventHandler(this.listView1_ColumnWidthChanging);
             this.listView1.SelectedIndexChanged += new System.EventHandler(this.listView1_SelectedIndexChanged);
+            this.listView1.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.listView1_MouseDoubleClick);
             // 
             // columnHeader1
             // 
@@ -114,12 +114,14 @@
             // 
             // caughtButton
             // 
+            this.caughtButton.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.caughtButton.ForeColor = System.Drawing.Color.White;
             this.caughtButton.Location = new System.Drawing.Point(542, 394);
             this.caughtButton.Name = "caughtButton";
             this.caughtButton.Size = new System.Drawing.Size(108, 42);
             this.caughtButton.TabIndex = 2;
             this.caughtButton.Text = "Caught";
-            this.caughtButton.UseVisualStyleBackColor = true;
+            this.caughtButton.UseVisualStyleBackColor = false;
             this.caughtButton.Click += new System.EventHandler(this.button1_Click);
             // 
             // selectedLabel
@@ -127,7 +129,7 @@
             this.selectedLabel.AutoSize = true;
             this.selectedLabel.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.selectedLabel.Font = new System.Drawing.Font("Cooper Black", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.selectedLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
+            this.selectedLabel.ForeColor = System.Drawing.Color.AliceBlue;
             this.selectedLabel.Location = new System.Drawing.Point(416, 76);
             this.selectedLabel.Name = "selectedLabel";
             this.selectedLabel.Size = new System.Drawing.Size(0, 32);
@@ -143,6 +145,7 @@
             // 
             // typeFilterBox
             // 
+            this.typeFilterBox.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.typeFilterBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.typeFilterBox.FormattingEnabled = true;
             this.typeFilterBox.Items.AddRange(new object[] {
@@ -158,7 +161,7 @@
             // 
             // searchBox
             // 
-            this.searchBox.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.searchBox.BackColor = System.Drawing.Color.AliceBlue;
             this.searchBox.Location = new System.Drawing.Point(225, 310);
             this.searchBox.Name = "searchBox";
             this.searchBox.Size = new System.Drawing.Size(400, 30);
@@ -168,17 +171,19 @@
             // 
             // favoriteButton
             // 
+            this.favoriteButton.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.favoriteButton.ForeColor = System.Drawing.Color.White;
             this.favoriteButton.Location = new System.Drawing.Point(656, 394);
             this.favoriteButton.Name = "favoriteButton";
             this.favoriteButton.Size = new System.Drawing.Size(108, 42);
             this.favoriteButton.TabIndex = 10;
             this.favoriteButton.Text = "Favorite";
-            this.favoriteButton.UseVisualStyleBackColor = true;
+            this.favoriteButton.UseVisualStyleBackColor = false;
             this.favoriteButton.Click += new System.EventHandler(this.favoriteButton_Click);
             // 
             // logoutButton
             // 
-            this.logoutButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
+            this.logoutButton.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.logoutButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.logoutButton.ForeColor = System.Drawing.Color.White;
             this.logoutButton.Location = new System.Drawing.Point(725, 0);
@@ -191,27 +196,32 @@
             // 
             // userPageButton
             // 
+            this.userPageButton.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.userPageButton.ForeColor = System.Drawing.Color.White;
             this.userPageButton.Location = new System.Drawing.Point(604, 0);
             this.userPageButton.Name = "userPageButton";
             this.userPageButton.Size = new System.Drawing.Size(108, 34);
             this.userPageButton.TabIndex = 13;
             this.userPageButton.Text = "User Page";
-            this.userPageButton.UseVisualStyleBackColor = true;
+            this.userPageButton.UseVisualStyleBackColor = false;
             this.userPageButton.Click += new System.EventHandler(this.userPageButton_Click);
             // 
             // showListButton
             // 
-            this.showListButton.Location = new System.Drawing.Point(658, 330);
+            this.showListButton.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.showListButton.ForeColor = System.Drawing.Color.White;
+            this.showListButton.Location = new System.Drawing.Point(656, 310);
             this.showListButton.Name = "showListButton";
             this.showListButton.Size = new System.Drawing.Size(106, 31);
             this.showListButton.TabIndex = 15;
             this.showListButton.Text = "Show List";
-            this.showListButton.UseVisualStyleBackColor = true;
+            this.showListButton.UseVisualStyleBackColor = false;
             this.showListButton.Click += new System.EventHandler(this.showListButton_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.ForeColor = System.Drawing.Color.AliceBlue;
             this.label2.Location = new System.Drawing.Point(59, 284);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(52, 23);
@@ -221,42 +231,12 @@
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.ForeColor = System.Drawing.Color.AliceBlue;
             this.label4.Location = new System.Drawing.Point(377, 284);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(95, 23);
             this.label4.TabIndex = 17;
             this.label4.Text = "Search Bar";
-            // 
-            // descLabel
-            // 
-            this.descLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
-            this.descLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.descLabel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.descLabel.ForeColor = System.Drawing.Color.White;
-            this.descLabel.Location = new System.Drawing.Point(225, 221);
-            this.descLabel.MaximumSize = new System.Drawing.Size(400, 50);
-            this.descLabel.Name = "descLabel";
-            this.descLabel.Size = new System.Drawing.Size(400, 50);
-            this.descLabel.TabIndex = 18;
-            this.descLabel.Visible = false;
-            // 
-            // type1Label
-            // 
-            this.type1Label.AutoSize = true;
-            this.type1Label.Location = new System.Drawing.Point(558, 469);
-            this.type1Label.Name = "type1Label";
-            this.type1Label.Size = new System.Drawing.Size(58, 23);
-            this.type1Label.TabIndex = 20;
-            this.type1Label.Text = "Type1";
-            // 
-            // type2Label
-            // 
-            this.type2Label.AutoSize = true;
-            this.type2Label.Location = new System.Drawing.Point(634, 469);
-            this.type2Label.Name = "type2Label";
-            this.type2Label.Size = new System.Drawing.Size(58, 23);
-            this.type2Label.TabIndex = 21;
-            this.type2Label.Text = "Type2";
             // 
             // type1PicBx
             // 
@@ -282,26 +262,42 @@
             // 
             // pokemonPic
             // 
+            this.pokemonPic.BackColor = System.Drawing.Color.Transparent;
+            this.pokemonPic.BackgroundImage = global::Software_Project.Properties.Resources.glow;
+            this.pokemonPic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pokemonPic.ErrorImage = null;
             this.pokemonPic.InitialImage = null;
-            this.pokemonPic.Location = new System.Drawing.Point(225, 38);
+            this.pokemonPic.Location = new System.Drawing.Point(225, 41);
             this.pokemonPic.Name = "pokemonPic";
             this.pokemonPic.Size = new System.Drawing.Size(181, 177);
             this.pokemonPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pokemonPic.TabIndex = 23;
             this.pokemonPic.TabStop = false;
             // 
+            // descLb
+            // 
+            this.descLb.AutoSize = true;
+            this.descLb.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.descLb.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.descLb.Font = new System.Drawing.Font("Nirmala UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.descLb.ForeColor = System.Drawing.Color.White;
+            this.descLb.Location = new System.Drawing.Point(226, 211);
+            this.descLb.MaximumSize = new System.Drawing.Size(399, 60);
+            this.descLb.MinimumSize = new System.Drawing.Size(399, 60);
+            this.descLb.Name = "descLb";
+            this.descLb.Size = new System.Drawing.Size(399, 60);
+            this.descLb.TabIndex = 25;
+            this.descLb.Visible = false;
+            // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
+            this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(818, 647);
+            this.Controls.Add(this.descLb);
             this.Controls.Add(this.type1PicBx);
             this.Controls.Add(this.type2PicBx);
-            this.Controls.Add(this.type2Label);
-            this.Controls.Add(this.type1Label);
-            this.Controls.Add(this.descLabel);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.showListButton);
@@ -351,12 +347,10 @@
         private System.Windows.Forms.Button showListButton;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label descLabel;
-        private System.Windows.Forms.Label type1Label;
-        private System.Windows.Forms.Label type2Label;
         private System.Windows.Forms.ColumnHeader columnHeader5;
         private System.Windows.Forms.PictureBox type2PicBx;
         private System.Windows.Forms.PictureBox type1PicBx;
         private System.Windows.Forms.PictureBox pokemonPic;
+        private System.Windows.Forms.Label descLb;
     }
 }

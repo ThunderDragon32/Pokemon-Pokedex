@@ -7,6 +7,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Media;
+using System.IO;
+using System.Net;
+using NAudio.Wave;
 
 
 namespace Software_Project
@@ -21,12 +25,10 @@ namespace Software_Project
         {
             InitializeComponent();
 
-            Label1 = this.currentUser;
+            CurrentUser = this.currentUser;
             ListView1 = this.listView1;
             SelectedLabel = this.selectedLabel;
-            Type1Label = this.type1Label;
-            Type2Label = this.type2Label;
-            DescLabel = this.descLabel;
+            DescLabel = this.descLb;
             Type1PicBx = this.type1PicBx;
             Type2PicBx = this.type2PicBx;
             PokemonPic = this.pokemonPic;
@@ -34,11 +36,9 @@ namespace Software_Project
         }
         //------------------------------------
 
-        public static Label Label1;
+        public static Label CurrentUser;
         public static ListView ListView1;
         public static Label SelectedLabel; //Selected Pokemon name and ID are labeled
-        public static Label Type1Label; //selected Pokeomn's Type 1 is labled
-        public static Label Type2Label; //Selected Pokemon's Type 2 is labled 
         public static Label DescLabel; //Selected Pokemon Desc is labled
         public static PictureBox Type1PicBx;
         public static PictureBox Type2PicBx;
@@ -56,7 +56,7 @@ namespace Software_Project
         {
 
             var table = controller.pokemonTypeFilter("ALL TYPES"); //Loads Pokemon Database for user
-            Label1.Text = "Current User: " + FrmLogin.name;
+            currentUser.Text = "Current User: " + FrmLogin.name;
             controller.listViewChange(table, "Dashboard");
         }
         //-----------------------------------------------------
@@ -70,7 +70,7 @@ namespace Software_Project
             cusFavoriteButton.ShowDialog();
         }
 
-        private void listView1_SelectedIndexChanged(object sender, EventArgs e) //Shows Selected Pokemon to User
+        public void listView1_SelectedIndexChanged(object sender, EventArgs e) //Shows Selected Pokemon to User
         {
             controller.listViewSelectChange();
         }
@@ -136,6 +136,17 @@ namespace Software_Project
         private void pictureBox1_Click(object sender, EventArgs e)
         {
 
+        }
+        
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void listView1_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            
         }
     }
 }
