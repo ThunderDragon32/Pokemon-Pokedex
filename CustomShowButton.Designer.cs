@@ -47,29 +47,36 @@
             // 
             // showCaughtButton
             // 
+            this.showCaughtButton.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.showCaughtButton.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.showCaughtButton.ForeColor = System.Drawing.Color.AliceBlue;
             this.showCaughtButton.Location = new System.Drawing.Point(33, 141);
             this.showCaughtButton.Name = "showCaughtButton";
             this.showCaughtButton.Size = new System.Drawing.Size(117, 49);
             this.showCaughtButton.TabIndex = 2;
             this.showCaughtButton.Text = "Show Caught";
-            this.showCaughtButton.UseVisualStyleBackColor = true;
+            this.showCaughtButton.UseVisualStyleBackColor = false;
             this.showCaughtButton.Click += new System.EventHandler(this.showCaughtButton_Click);
             // 
             // showFavoriteButton
             // 
+            this.showFavoriteButton.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.showFavoriteButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.showFavoriteButton.ForeColor = System.Drawing.Color.AliceBlue;
             this.showFavoriteButton.Location = new System.Drawing.Point(302, 141);
             this.showFavoriteButton.Name = "showFavoriteButton";
             this.showFavoriteButton.Size = new System.Drawing.Size(117, 49);
             this.showFavoriteButton.TabIndex = 2;
             this.showFavoriteButton.Text = "Show Favorite";
-            this.showFavoriteButton.UseVisualStyleBackColor = true;
+            this.showFavoriteButton.UseVisualStyleBackColor = false;
             this.showFavoriteButton.Click += new System.EventHandler(this.showFavoriteButton_Click);
             // 
             // closeDialog
             // 
-            this.closeDialog.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
+            this.closeDialog.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.closeDialog.Cursor = System.Windows.Forms.Cursors.Hand;
             this.closeDialog.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.closeDialog.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.closeDialog.ForeColor = System.Drawing.Color.White;
             this.closeDialog.Location = new System.Drawing.Point(422, 0);
             this.closeDialog.Name = "closeDialog";
@@ -81,12 +88,15 @@
             // 
             // uncaughtListButton
             // 
+            this.uncaughtListButton.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.uncaughtListButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.uncaughtListButton.ForeColor = System.Drawing.Color.AliceBlue;
             this.uncaughtListButton.Location = new System.Drawing.Point(167, 141);
             this.uncaughtListButton.Name = "uncaughtListButton";
             this.uncaughtListButton.Size = new System.Drawing.Size(117, 49);
             this.uncaughtListButton.TabIndex = 20;
             this.uncaughtListButton.Text = "Show UnCaught";
-            this.uncaughtListButton.UseVisualStyleBackColor = true;
+            this.uncaughtListButton.UseVisualStyleBackColor = false;
             this.uncaughtListButton.Click += new System.EventHandler(this.uncaughtListButton_Click);
             // 
             // CustomShowButton

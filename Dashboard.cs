@@ -7,10 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Media;
-using System.IO;
-using System.Net;
-using NAudio.Wave;
+
 
 
 namespace Software_Project
@@ -73,15 +70,18 @@ namespace Software_Project
         public void listView1_SelectedIndexChanged(object sender, EventArgs e) //Shows Selected Pokemon to User
         {
             controller.listViewSelectChange();
+            
+
         }
 
         private void typeFilterBox_SelectedIndexChanged(object sender, EventArgs e) //Filter Pokemon by Type in List
         {
             string typeSearch = typeFilterBox.Text;
-            controller.clearText();
+            //controller.clearText();
             listView1.Items.Clear();
             var table = controller.pokemonTypeFilter(typeSearch);
             controller.listViewChange(table, "Dashboard");
+            
 
         }
 
@@ -91,7 +91,7 @@ namespace Software_Project
         {
 
             string keyword = searchBox.Text;
-            controller.clearText();
+            //controller.clearText();
             listView1.Items.Clear();
             var table = controller.pokemonSearch(keyword);
             controller.listViewChange(table, "Dashboard");
@@ -135,18 +135,17 @@ namespace Software_Project
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-
-        }
-        
-
-        private void button1_Click_1(object sender, EventArgs e)
-        {
             
         }
 
         private void listView1_MouseDoubleClick(object sender, MouseEventArgs e)
         {
             
+        }
+
+        private void pokemonPic_Click(object sender, EventArgs e)
+        {
+            controller.playPokemonCry();
         }
     }
 }

@@ -36,9 +36,6 @@
     <StartupObject>Software_Project.Program</StartupObject>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="NAudio, Version=1.8.4.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>packages\NAudio.1.8.4\lib\net35\NAudio.dll</HintPath>
-    </Reference>
     <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
@@ -100,6 +97,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdminFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminFrm.Designer.cs">
+      <DependentUpon>AdminFrm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controller.cs" />
     <Compile Include="CustomCaughtButton.cs">
       <SubType>Form</SubType>
@@ -151,6 +154,9 @@
     <Compile Include="User_Homepage.Designer.cs">
       <DependentUpon>User_Homepage.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AdminFrm.resx">
+      <DependentUpon>AdminFrm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CustomCaughtButton.resx">
       <DependentUpon>CustomCaughtButton.cs</DependentUpon>
     </EmbeddedResource>

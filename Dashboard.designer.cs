@@ -106,7 +106,7 @@
             // currentUser
             // 
             this.currentUser.AutoSize = true;
-            this.currentUser.Location = new System.Drawing.Point(608, 45);
+            this.currentUser.Location = new System.Drawing.Point(618, 45);
             this.currentUser.Name = "currentUser";
             this.currentUser.Size = new System.Drawing.Size(0, 23);
             this.currentUser.TabIndex = 1;
@@ -129,7 +129,7 @@
             this.selectedLabel.AutoSize = true;
             this.selectedLabel.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.selectedLabel.Font = new System.Drawing.Font("Cooper Black", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.selectedLabel.ForeColor = System.Drawing.Color.AliceBlue;
+            this.selectedLabel.ForeColor = System.Drawing.Color.Black;
             this.selectedLabel.Location = new System.Drawing.Point(416, 76);
             this.selectedLabel.Name = "selectedLabel";
             this.selectedLabel.Size = new System.Drawing.Size(0, 32);
@@ -152,7 +152,22 @@
             "ALL TYPES",
             "Water",
             "Fire",
-            "Grass"});
+            "Grass",
+            "Normal",
+            "Dragon",
+            "Bug",
+            "Dark",
+            "Electric",
+            "Fairy",
+            "Fighting",
+            "Flying",
+            "Ghost",
+            "Ground",
+            "Ice",
+            "Poison",
+            "Psychic",
+            "Rock",
+            "Steel"});
             this.typeFilterBox.Location = new System.Drawing.Point(28, 310);
             this.typeFilterBox.Name = "typeFilterBox";
             this.typeFilterBox.Size = new System.Drawing.Size(121, 31);
@@ -221,7 +236,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.ForeColor = System.Drawing.Color.AliceBlue;
+            this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Location = new System.Drawing.Point(59, 284);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(52, 23);
@@ -231,7 +246,8 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.ForeColor = System.Drawing.Color.AliceBlue;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.ForeColor = System.Drawing.Color.Black;
             this.label4.Location = new System.Drawing.Point(377, 284);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(95, 23);
@@ -273,6 +289,7 @@
             this.pokemonPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pokemonPic.TabIndex = 23;
             this.pokemonPic.TabStop = false;
+            this.pokemonPic.Click += new System.EventHandler(this.pokemonPic_Click);
             // 
             // descLb
             // 
@@ -293,7 +310,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Black;
+            this.BackColor = System.Drawing.Color.LightGray;
             this.ClientSize = new System.Drawing.Size(818, 647);
             this.Controls.Add(this.descLb);
             this.Controls.Add(this.type1PicBx);

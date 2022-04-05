@@ -18,6 +18,8 @@ namespace Software_Project
             ListView1 = this.listView1;
             SelectedLabel = this.selectedPokemon;
             SelectedLabelID = this.selectedPokemonID;
+            AdminButton = this.adminButton;
+            controller.adminVerify();
         }
         //----------------
         public static ListView ListView1;
@@ -26,6 +28,7 @@ namespace Software_Project
         public static CustomShowButton cusShowButton = new CustomShowButton();
         public static Label SelectedLabelID;
         public static Label SelectedLabel;
+        public static Button AdminButton;
         Controller controller = new Controller();
         //----------------
         private void User_Homepage_Load(object sender, EventArgs e)
@@ -81,6 +84,19 @@ namespace Software_Project
             FrmLogin.FrmLog.Show();
             listView1.Items.Clear();
             this.Close();
+        }
+
+        private void adminButton_Click(object sender, EventArgs e)
+        {
+            new AdminFrm().Show();
+            listView1.Items.Clear();
+            this.Close();
+
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -36,7 +36,6 @@ namespace Software_Project
 
         private void button3_Click(object sender, EventArgs e) //Cancel Button
         {
-            controller.clearText();
             this.Close();
         }
 

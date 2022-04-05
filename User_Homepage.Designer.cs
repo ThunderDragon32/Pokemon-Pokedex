@@ -45,6 +45,7 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.adminButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -203,6 +204,7 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // pictureBox1
             // 
@@ -215,12 +217,24 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
+            // adminButton
+            // 
+            this.adminButton.Location = new System.Drawing.Point(0, 0);
+            this.adminButton.Name = "adminButton";
+            this.adminButton.Size = new System.Drawing.Size(178, 50);
+            this.adminButton.TabIndex = 22;
+            this.adminButton.Text = "Administator Tools";
+            this.adminButton.UseVisualStyleBackColor = true;
+            this.adminButton.Visible = false;
+            this.adminButton.Click += new System.EventHandler(this.adminButton_Click);
+            // 
             // User_Homepage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(818, 647);
+            this.Controls.Add(this.adminButton);
             this.Controls.Add(this.logoutButton);
             this.Controls.Add(this.showListButton);
             this.Controls.Add(this.searchPageButton);
@@ -273,5 +287,6 @@
         private System.Windows.Forms.Button searchPageButton;
         private System.Windows.Forms.Button showListButton;
         private System.Windows.Forms.Button logoutButton;
+        private System.Windows.Forms.Button adminButton;
     }
 }

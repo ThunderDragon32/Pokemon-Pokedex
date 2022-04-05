@@ -36,32 +36,41 @@
             // 
             // addButton
             // 
+            this.addButton.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.addButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addButton.ForeColor = System.Drawing.Color.AliceBlue;
             this.addButton.Location = new System.Drawing.Point(12, 151);
             this.addButton.Name = "addButton";
             this.addButton.Size = new System.Drawing.Size(117, 49);
             this.addButton.TabIndex = 0;
             this.addButton.Text = "ADD";
-            this.addButton.UseVisualStyleBackColor = true;
+            this.addButton.UseVisualStyleBackColor = false;
             this.addButton.Click += new System.EventHandler(this.button1_Click);
             // 
             // removeButton
             // 
+            this.removeButton.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.removeButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.removeButton.ForeColor = System.Drawing.Color.AliceBlue;
             this.removeButton.Location = new System.Drawing.Point(168, 151);
             this.removeButton.Name = "removeButton";
             this.removeButton.Size = new System.Drawing.Size(117, 49);
             this.removeButton.TabIndex = 0;
             this.removeButton.Text = "REMOVE";
-            this.removeButton.UseVisualStyleBackColor = true;
+            this.removeButton.UseVisualStyleBackColor = false;
             this.removeButton.Click += new System.EventHandler(this.button2_Click);
             // 
             // cancelButton
             // 
+            this.cancelButton.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.cancelButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cancelButton.ForeColor = System.Drawing.Color.AliceBlue;
             this.cancelButton.Location = new System.Drawing.Point(325, 151);
             this.cancelButton.Name = "cancelButton";
             this.cancelButton.Size = new System.Drawing.Size(117, 49);
             this.cancelButton.TabIndex = 0;
             this.cancelButton.Text = "CANCEL";
-            this.cancelButton.UseVisualStyleBackColor = true;
+            this.cancelButton.UseVisualStyleBackColor = false;
             this.cancelButton.Click += new System.EventHandler(this.button3_Click);
             // 
             // label1

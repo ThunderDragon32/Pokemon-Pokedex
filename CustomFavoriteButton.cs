@@ -36,8 +36,12 @@ namespace Software_Project
 
         private void cancelButton_Click(object sender, EventArgs e)
         {
-            controller.clearText();
             this.Close();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

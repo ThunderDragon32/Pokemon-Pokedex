@@ -7,9 +7,6 @@ using System.Data.OleDb;
 using System.Data;
 using System.Windows.Forms;
 using System.Media;
-using System.IO;
-using System.Net;
-using NAudio.Wave;
 
 
 namespace Software_Project
@@ -19,7 +16,8 @@ namespace Software_Project
     {
         public static string selectedName; //Selected Pokemon's name is saved stored
         public static string selectedID; //Selected Pokemon's ID is stored
-        
+        SoundPlayer sound = new SoundPlayer();
+
 
         public static Model model = new Model();
         public void verifyUserAndPass() //FrmLogin calls this method to read database for User and Pass Verification
@@ -127,6 +125,13 @@ namespace Software_Project
                     model.closeController();
                     
                 }
+                else if(FrmRegister.TxtUsername.Text.ToUpper() == "UPDATE" || FrmRegister.TxtUsername.Text.ToUpper() == "DELETE")
+                {
+                    //Key word names
+                    MessageBox.Show("Not Allowed Username!", "Registration Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    clearText();
+                    model.closeController();
+                }
                 else  ///Creates User
                 {
                     string register = "INSERT INTO tbl_users VALUES ('" + FrmRegister.TxtUsername.Text + "','" + FrmRegister.TxtPassword.Text + "')";
@@ -148,7 +153,6 @@ namespace Software_Project
         }
         public void listViewSelectChange() //Changes selection when user interacts with display
         {
-            SoundPlayer sound = new SoundPlayer();
             sound.Stop();
             if (Application.OpenForms["Dashboard"] != null)
             {
@@ -160,17 +164,7 @@ namespace Software_Project
                     Dashboard.SelectedLabel.Text = "No." + selectedID + " " + selectedName;
                     Dashboard.DescLabel.Visible = true;
                     imageTypeUpdate();
-                    try
-                    {
-                        //sound.Stop();
-                        sound = new SoundPlayer(selectedID + ".wav");
-                        
-                        sound.Play();
-                    }
-                    catch (Exception ex) { }
-                    
-                    
-                 
+                    playPokemonCry();
                     //PlayMp3FromUrl("https://play.pokemonshowdown.com/audio/cries/" + selectedName.ToLower() + ".mp3");
                 }
             }
@@ -241,7 +235,7 @@ namespace Software_Project
             {
                 //Pokemon is already in list
                 MessageBox.Show("Pokemon already in list!");
-                clearText();
+                //clearText();
                 model.closeController();
 
             }
@@ -258,7 +252,7 @@ namespace Software_Project
                     
                     else
                     {
-                        clearText();
+                        //clearText();
                         model.closeController();
                         MessageBox.Show("Only 6 Pokemon can be your favorite!");
                     }
@@ -266,7 +260,7 @@ namespace Software_Project
                 else
                 {
                     model.closeController();
-                    clearText();
+                    //clearText();
                     MessageBox.Show("No Pokemon Selected!");
                 }
             }
@@ -276,7 +270,7 @@ namespace Software_Project
             string insertPokemon = "INSERT INTO " + database + " VALUES ('" + FrmLogin.name + "','" + selectedID + "')";
             model.executeNonQueryCommand(model.databaseCommand(insertPokemon, model.getCon()));
             model.closeController();
-            clearText();
+            //clearText();
             MessageBox.Show("Pokemon has been added to list!");
         }
         public void removePokemon(string database) //Remove Pokemon from a database
@@ -288,14 +282,14 @@ namespace Software_Project
                     string deletePokemon = "DELETE FROM " + database + " WHERE ID= '" + selectedID + "' and username= '" + FrmLogin.name + "'";
                     model.executeNonQueryCommand(model.databaseCommand(deletePokemon, model.getCon()));
                     model.closeController();
-                    clearText();
+                    //clearText();
                     MessageBox.Show("Pokemon has been removed from list!");
                 }
 
                 else  ///Pokemon not in list
                 {
                     MessageBox.Show("Pokemon not in list!");
-                    clearText();
+                    //clearText();
                     model.closeController();
                 }
                 
@@ -317,7 +311,11 @@ namespace Software_Project
             try
             {
                 model.openController();
-                if (type == "Water" || type == "Fire" || type == "Grass")
+                if (type == "Water" || type == "Fire" || type == "Grass" || type == "Bug" || 
+                    type == "Dark" || type == "Dragon" || type == "Electric" || type == "Fairy" 
+                    || type == "Fighting" || type == "Flying" || type == "Ghost" || type == "Ground"
+                    || type == "Ice" || type == "Normal" || type == "Poison" || type == "Psychic" 
+                    || type == "Rock" || type == "Steel")
                 {
                     return tableSet(model.databaseAdapter("select * from Pokemon where type1='" + type + "' or type2= '" + type + "'", model.getCon()));
                 }
@@ -467,47 +465,21 @@ namespace Software_Project
             }
 
         }
-        public void PlayMp3FromUrl(string url)
+       
+        public void playPokemonCry()
         {
-
-            
-
-            using (Stream ms = new MemoryStream())
+            try
             {
-                using (Stream stream = WebRequest.Create(url)
-                    .GetResponse().GetResponseStream())
-                {
-                    byte[] buffer = new byte[32768];
-                    int read;
-                    while ((read = stream.Read(buffer, 0, buffer.Length)) > 0)
-                    {
-                        ms.Write(buffer, 0, read);
-                    }
-                }
-                
-                ms.Position = 0;
-                using (WaveStream blockAlignedStream =
-                    new BlockAlignReductionStream(
-                        WaveFormatConversionStream.CreatePcmStream(
-                            new Mp3FileReader(ms))))
-                {
-                    using (WaveOut waveOut = new WaveOut(WaveCallbackInfo.FunctionCallback()))
-                    {
-                        waveOut.Init(blockAlignedStream);
-
-                        waveOut.Play();
-
-                        while (waveOut.PlaybackState == PlaybackState.Playing)
-                        {
-                            
-                            System.Threading.Thread.Sleep(1000);
-                            
-
-                        }
-                        
-                    }
-                }
+                sound.Stop();
+                sound = new SoundPlayer(selectedID + ".wav");
+                sound.Play();
             }
+            catch (Exception ex) { }
+        }
+
+        public void adminVerify()
+        {
+            if (FrmLogin.name == "admin") User_Homepage.AdminButton.Visible = true;
         }
     }
 }
