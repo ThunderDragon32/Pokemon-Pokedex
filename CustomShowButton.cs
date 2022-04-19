@@ -27,15 +27,19 @@ namespace Software_Project
             if (Application.OpenForms["Dashboard"] != null)
             {
                 Dashboard.ListView1.Items.Clear();
-                var table = controller.showList("User_Caught");
-                controller.listViewChange(table, "Dashboard");
+                var table = controller.showList("User_Caught", FrmLogin.name);
+                controller.listViewChange(table, "Pokemon", "Dashboard");
+                Controller.databaseName = "User_Caught";
+                Dashboard.CurrentDBLabel.Text = "Current Database: " + Controller.databaseName;
             }
             else
             {
 
                 User_Homepage.ListView1.Items.Clear();
-                var table = controller.showList("User_Caught");
-                controller.listViewChange(table, "User_Homepage");
+                var table = controller.showList("User_Caught", FrmLogin.name);
+                controller.listViewChange(table, "Pokemon", "User_Homepage");
+                Controller.databaseName = "User_Caught";
+                User_Homepage.CurrentDBLabel.Text = "Current Database: " + Controller.databaseName;
 
             }
             controller.clearText();
@@ -49,16 +53,19 @@ namespace Software_Project
             if (Application.OpenForms["Dashboard"] != null)
             {
                 Dashboard.ListView1.Items.Clear();
-                var table = controller.showList("User_Favorite");
-                controller.listViewChange(table, "Dashboard");
+                var table = controller.showList("User_Favorite", FrmLogin.name);
+                controller.listViewChange(table, "Pokemon", "Dashboard");
+                Controller.databaseName = "User_Favorite";
+                Dashboard.CurrentDBLabel.Text = "Current Database: " + Controller.databaseName;
             }
             else
             {
 
                 User_Homepage.ListView1.Items.Clear();
-                var table = controller.showList("User_Favorite");
-                controller.listViewChange(table, "User_Homepage");
-
+                var table = controller.showList("User_Favorite", FrmLogin.name);
+                controller.listViewChange(table, "Pokemon", "User_Homepage");
+                Controller.databaseName = "User_Favorite";
+                User_Homepage.CurrentDBLabel.Text = "Current Database: " + Controller.databaseName;
             }
             controller.clearText();
             this.Close();
@@ -77,19 +84,46 @@ namespace Software_Project
             if (Application.OpenForms["Dashboard"] != null)
             {
 
-
                 Dashboard.ListView1.Items.Clear();
-                var table = controller.showUnCaughtList();
-                controller.listViewChange(table, "Dashboard");
+                var table = controller.showUnCaughtList(FrmLogin.name);
+                controller.listViewChange(table, "Pokemon", "Dashboard");
+                Controller.databaseName = "User_UnCaught";
+                Dashboard.CurrentDBLabel.Text = "Current Database: " + Controller.databaseName;
             }
             else
             {
                 User_Homepage.ListView1.Items.Clear();
-                var table = controller.showUnCaughtList();
-                controller.listViewChange(table, "User_Homepage");
+                var table = controller.showUnCaughtList(FrmLogin.name);
+                controller.listViewChange(table, "Pokemon", "User_Homepage");
+                Controller.databaseName = "User_UnCaught";
+                User_Homepage.CurrentDBLabel.Text = "Current Database: " + Controller.databaseName;
             }
             controller.clearText();
             this.Close();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (Application.OpenForms["Dashboard"] != null)
+            {
+
+                Dashboard.ListView1.Items.Clear();
+                var table = controller.showList("Pokemon");
+                controller.listViewChange(table, "Pokemon", "Dashboard");
+                Controller.databaseName = "Pokemon";
+                Dashboard.CurrentDBLabel.Text = "Current Database: " + Controller.databaseName;
+            }
+            else
+            {
+                User_Homepage.ListView1.Items.Clear();
+                var table = controller.showList("Pokemon");
+                controller.listViewChange(table, "Pokemon", "User_Homepage");
+                Controller.databaseName = "Pokemon";
+                User_Homepage.CurrentDBLabel.Text = "Current Database: " + Controller.databaseName;
+            }
+            controller.clearText();
+            this.Close();
+        }
+
     }
 }

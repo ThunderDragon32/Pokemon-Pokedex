@@ -50,9 +50,12 @@
             this.type2PicBx = new System.Windows.Forms.PictureBox();
             this.pokemonPic = new System.Windows.Forms.PictureBox();
             this.descLb = new System.Windows.Forms.Label();
+            this.currentDBLabel = new System.Windows.Forms.Label();
+            this.caughtBox = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.type1PicBx)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.type2PicBx)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pokemonPic)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.caughtBox)).BeginInit();
             this.SuspendLayout();
             // 
             // listView1
@@ -106,7 +109,7 @@
             // currentUser
             // 
             this.currentUser.AutoSize = true;
-            this.currentUser.Location = new System.Drawing.Point(618, 45);
+            this.currentUser.Location = new System.Drawing.Point(625, 41);
             this.currentUser.Name = "currentUser";
             this.currentUser.Size = new System.Drawing.Size(0, 23);
             this.currentUser.TabIndex = 1;
@@ -116,7 +119,7 @@
             // 
             this.caughtButton.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.caughtButton.ForeColor = System.Drawing.Color.White;
-            this.caughtButton.Location = new System.Drawing.Point(542, 394);
+            this.caughtButton.Location = new System.Drawing.Point(542, 408);
             this.caughtButton.Name = "caughtButton";
             this.caughtButton.Size = new System.Drawing.Size(108, 42);
             this.caughtButton.TabIndex = 2;
@@ -188,7 +191,7 @@
             // 
             this.favoriteButton.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.favoriteButton.ForeColor = System.Drawing.Color.White;
-            this.favoriteButton.Location = new System.Drawing.Point(656, 394);
+            this.favoriteButton.Location = new System.Drawing.Point(656, 408);
             this.favoriteButton.Name = "favoriteButton";
             this.favoriteButton.Size = new System.Drawing.Size(108, 42);
             this.favoriteButton.TabIndex = 10;
@@ -213,9 +216,9 @@
             // 
             this.userPageButton.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.userPageButton.ForeColor = System.Drawing.Color.White;
-            this.userPageButton.Location = new System.Drawing.Point(604, 0);
+            this.userPageButton.Location = new System.Drawing.Point(604, -4);
             this.userPageButton.Name = "userPageButton";
-            this.userPageButton.Size = new System.Drawing.Size(108, 34);
+            this.userPageButton.Size = new System.Drawing.Size(108, 38);
             this.userPageButton.TabIndex = 13;
             this.userPageButton.Text = "User Page";
             this.userPageButton.UseVisualStyleBackColor = false;
@@ -306,12 +309,37 @@
             this.descLb.TabIndex = 25;
             this.descLb.Visible = false;
             // 
+            // currentDBLabel
+            // 
+            this.currentDBLabel.AutoSize = true;
+            this.currentDBLabel.Location = new System.Drawing.Point(24, 350);
+            this.currentDBLabel.Name = "currentDBLabel";
+            this.currentDBLabel.Size = new System.Drawing.Size(34, 23);
+            this.currentDBLabel.TabIndex = 26;
+            this.currentDBLabel.Text = "DB";
+            this.currentDBLabel.Click += new System.EventHandler(this.label1_Click_1);
+            // 
+            // caughtBox
+            // 
+            this.caughtBox.ErrorImage = null;
+            this.caughtBox.Image = global::Software_Project.Properties.Resources.pokeball;
+            this.caughtBox.InitialImage = null;
+            this.caughtBox.Location = new System.Drawing.Point(225, 178);
+            this.caughtBox.Name = "caughtBox";
+            this.caughtBox.Size = new System.Drawing.Size(30, 30);
+            this.caughtBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.caughtBox.TabIndex = 27;
+            this.caughtBox.TabStop = false;
+            this.caughtBox.Visible = false;
+            // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.LightGray;
+            this.BackColor = System.Drawing.Color.AliceBlue;
             this.ClientSize = new System.Drawing.Size(818, 647);
+            this.Controls.Add(this.caughtBox);
+            this.Controls.Add(this.currentDBLabel);
             this.Controls.Add(this.descLb);
             this.Controls.Add(this.type1PicBx);
             this.Controls.Add(this.type2PicBx);
@@ -341,6 +369,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.type1PicBx)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.type2PicBx)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pokemonPic)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.caughtBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -369,5 +398,7 @@
         private System.Windows.Forms.PictureBox type1PicBx;
         private System.Windows.Forms.PictureBox pokemonPic;
         private System.Windows.Forms.Label descLb;
+        private System.Windows.Forms.Label currentDBLabel;
+        private System.Windows.Forms.PictureBox caughtBox;
     }
 }

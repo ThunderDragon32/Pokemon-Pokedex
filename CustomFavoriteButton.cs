@@ -25,12 +25,14 @@ namespace Software_Project
         private void addButton_Click(object sender, EventArgs e)
         {
             controller.addPokemon("User_Favorite");
+            controller.refreshDisplay();
             this.Close();
         }
 
         private void removeButton_Click(object sender, EventArgs e)
         {
             controller.removePokemon("User_Favorite");
+            controller.refreshDisplay();
             this.Close();
         }
 

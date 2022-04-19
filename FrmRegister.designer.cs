@@ -47,7 +47,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("MS UI Gothic", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
+            this.label1.ForeColor = System.Drawing.Color.DeepSkyBlue;
             this.label1.Location = new System.Drawing.Point(28, 21);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(191, 33);
@@ -128,7 +128,7 @@
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
+            this.button1.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -146,7 +146,7 @@
             this.button2.BackColor = System.Drawing.Color.White;
             this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
+            this.button2.ForeColor = System.Drawing.Color.DeepSkyBlue;
             this.button2.Location = new System.Drawing.Point(34, 384);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(216, 35);
@@ -168,7 +168,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
+            this.label6.ForeColor = System.Drawing.Color.DeepSkyBlue;
             this.label6.Location = new System.Drawing.Point(76, 476);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(131, 23);
@@ -178,7 +178,7 @@
             // 
             // exitApp
             // 
-            this.exitApp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
+            this.exitApp.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.exitApp.Cursor = System.Windows.Forms.Cursors.Hand;
             this.exitApp.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.exitApp.ForeColor = System.Drawing.Color.White;

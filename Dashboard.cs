@@ -29,6 +29,8 @@ namespace Software_Project
             Type1PicBx = this.type1PicBx;
             Type2PicBx = this.type2PicBx;
             PokemonPic = this.pokemonPic;
+            CurrentDBLabel = this.currentDBLabel;
+            CaughtBox = this.caughtBox; 
             Dash = this;
         }
         //------------------------------------
@@ -37,9 +39,8 @@ namespace Software_Project
         public static ListView ListView1;
         public static Label SelectedLabel; //Selected Pokemon name and ID are labeled
         public static Label DescLabel; //Selected Pokemon Desc is labled
-        public static PictureBox Type1PicBx;
-        public static PictureBox Type2PicBx;
-        public static PictureBox PokemonPic;
+        public static Label CurrentDBLabel;
+        public static PictureBox Type1PicBx, Type2PicBx, PokemonPic, CaughtBox;
         public static CustomCaughtButton cusCaughtButton = new CustomCaughtButton();
         public static CustomFavoriteButton cusFavoriteButton = new CustomFavoriteButton();
         public static CustomShowButton cusShowButton = new CustomShowButton();
@@ -51,10 +52,15 @@ namespace Software_Project
 
         private void dashboard_Load(object sender, EventArgs e)
         {
-
-            var table = controller.pokemonTypeFilter("ALL TYPES"); //Loads Pokemon Database for user
+            var table = controller.showList("Pokemon"); //Loads Pokemon Database for user
             currentUser.Text = "Current User: " + FrmLogin.name;
-            controller.listViewChange(table, "Dashboard");
+            controller.listViewChange(table, "Pokemon", "Dashboard");
+            Controller.databaseName = "Pokemon";
+            currentDBLabel.Text = "Current Database: " + Controller.databaseName;
+            Controller.subdataName = "";
+            Controller.currentKey = "";
+            Controller.currentKey2 = "";
+           
         }
         //-----------------------------------------------------
         private void button1_Click(object sender, EventArgs e)
@@ -77,10 +83,11 @@ namespace Software_Project
         private void typeFilterBox_SelectedIndexChanged(object sender, EventArgs e) //Filter Pokemon by Type in List
         {
             string typeSearch = typeFilterBox.Text;
-            //controller.clearText();
+            Controller.databaseName = "Pokemon";
+            currentDBLabel.Text = "Current Database: " + Controller.databaseName;
             listView1.Items.Clear();
             var table = controller.pokemonTypeFilter(typeSearch);
-            controller.listViewChange(table, "Dashboard");
+            controller.listViewChange(table, "Pokemon", "Dashboard");
             
 
         }
@@ -89,12 +96,12 @@ namespace Software_Project
 
         private void searchBox_TextChanged(object sender, EventArgs e) //Search Pokemon Name
         {
-
+            Controller.databaseName = "Pokemon";
+            currentDBLabel.Text = "Current Database: " + Controller.databaseName;
             string keyword = searchBox.Text;
-            //controller.clearText();
             listView1.Items.Clear();
             var table = controller.pokemonSearch(keyword);
-            controller.listViewChange(table, "Dashboard");
+            controller.listViewChange(table, "Pokemon", "Dashboard");
         }
 
         private void label1_Click(object sender, EventArgs e) //For Testing Purposes
@@ -105,6 +112,10 @@ namespace Software_Project
         {
             FrmLogin.FrmLog.Show();
             listView1.Items.Clear();
+            Controller.databaseName = "";
+            Controller.subdataName = "";
+            Controller.currentKey = "";
+            Controller.currentKey2 = "";
             this.Close();
         }
 
@@ -116,16 +127,10 @@ namespace Software_Project
 
         }
 
-        private void showCaught_Click(object sender, EventArgs e)
-        {
-            listView1.Items.Clear();
-            var table = controller.showList("User_Caught");
-            controller.listViewChange(table, "Dashboard");
-        }
-
         private void showListButton_Click(object sender, EventArgs e)
         {
             cusShowButton.ShowDialog();
+            
         }
 
         private void listView1_ColumnWidthChanging(object sender, ColumnWidthChangingEventArgs e)
@@ -138,6 +143,11 @@ namespace Software_Project
             
         }
 
+        private void label1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
         private void listView1_MouseDoubleClick(object sender, MouseEventArgs e)
         {
             
@@ -145,7 +155,7 @@ namespace Software_Project
 
         private void pokemonPic_Click(object sender, EventArgs e)
         {
-            controller.playPokemonCry();
+            controller.playPokemonCry(Controller.currentKey);
         }
     }
 }

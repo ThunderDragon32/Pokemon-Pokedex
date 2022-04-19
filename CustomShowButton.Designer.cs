@@ -33,6 +33,7 @@
             this.showFavoriteButton = new System.Windows.Forms.Button();
             this.closeDialog = new System.Windows.Forms.Button();
             this.uncaughtListButton = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // showListLabel
@@ -50,7 +51,7 @@
             this.showCaughtButton.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.showCaughtButton.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.showCaughtButton.ForeColor = System.Drawing.Color.AliceBlue;
-            this.showCaughtButton.Location = new System.Drawing.Point(33, 141);
+            this.showCaughtButton.Location = new System.Drawing.Point(33, 160);
             this.showCaughtButton.Name = "showCaughtButton";
             this.showCaughtButton.Size = new System.Drawing.Size(117, 49);
             this.showCaughtButton.TabIndex = 2;
@@ -63,7 +64,7 @@
             this.showFavoriteButton.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.showFavoriteButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.showFavoriteButton.ForeColor = System.Drawing.Color.AliceBlue;
-            this.showFavoriteButton.Location = new System.Drawing.Point(302, 141);
+            this.showFavoriteButton.Location = new System.Drawing.Point(304, 160);
             this.showFavoriteButton.Name = "showFavoriteButton";
             this.showFavoriteButton.Size = new System.Drawing.Size(117, 49);
             this.showFavoriteButton.TabIndex = 2;
@@ -91,7 +92,7 @@
             this.uncaughtListButton.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.uncaughtListButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.uncaughtListButton.ForeColor = System.Drawing.Color.AliceBlue;
-            this.uncaughtListButton.Location = new System.Drawing.Point(167, 141);
+            this.uncaughtListButton.Location = new System.Drawing.Point(167, 161);
             this.uncaughtListButton.Name = "uncaughtListButton";
             this.uncaughtListButton.Size = new System.Drawing.Size(117, 49);
             this.uncaughtListButton.TabIndex = 20;
@@ -99,11 +100,25 @@
             this.uncaughtListButton.UseVisualStyleBackColor = false;
             this.uncaughtListButton.Click += new System.EventHandler(this.uncaughtListButton_Click);
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold);
+            this.button1.ForeColor = System.Drawing.Color.AliceBlue;
+            this.button1.Location = new System.Drawing.Point(167, 97);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(117, 38);
+            this.button1.TabIndex = 21;
+            this.button1.Text = "Show ALL";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // CustomShowButton
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(454, 235);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.uncaughtListButton);
             this.Controls.Add(this.closeDialog);
             this.Controls.Add(this.showFavoriteButton);
@@ -126,5 +141,6 @@
         private System.Windows.Forms.Button showFavoriteButton;
         private System.Windows.Forms.Button closeDialog;
         private System.Windows.Forms.Button uncaughtListButton;
+        private System.Windows.Forms.Button button1;
     }
 }

@@ -25,12 +25,14 @@ namespace Software_Project
         private void button1_Click(object sender, EventArgs e) //Add Button
         {
             controller.addPokemon("User_Caught");
+            controller.refreshDisplay();
             this.Close();
         }
 
         private void button2_Click(object sender, EventArgs e) //Remove Button
         {
             controller.removePokemon("User_Caught");
+            controller.refreshDisplay();
             this.Close();
         }
 

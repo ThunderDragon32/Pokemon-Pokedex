@@ -54,3 +54,75 @@ C:\Users\boggs\OneDrive\Documents\Visual Studio Projects\pokemon_app\bin\Debug\N
 C:\Users\boggs\OneDrive\Documents\Visual Studio Projects\pokemon_app\obj\Debug\Software Project.csproj.CopyComplete
 C:\Users\boggs\OneDrive\Documents\Visual Studio Projects\pokemon_app\obj\Debug\Software_Project.CustomShowButton.resources
 C:\Users\boggs\OneDrive\Documents\Visual Studio Projects\pokemon_app\obj\Debug\Software_Project.AdminFrm.resources
+C:\Users\bluen\Documents\Visual Studio Projects\Pokemon_App\obj\Debug\Software Project.csproj.AssemblyReference.cache
+C:\Users\bluen\Documents\Visual Studio Projects\Pokemon_App\obj\Debug\Software Project.csproj.SuggestedBindingRedirects.cache
+C:\Users\bluen\Documents\Visual Studio Projects\Pokemon_App\obj\Debug\Software_Project.AdminFrm.resources
+C:\Users\bluen\Documents\Visual Studio Projects\Pokemon_App\obj\Debug\Software_Project.CustomCaughtButton.resources
+C:\Users\bluen\Documents\Visual Studio Projects\Pokemon_App\obj\Debug\Software_Project.CustomFavoriteButton.resources
+C:\Users\bluen\Documents\Visual Studio Projects\Pokemon_App\obj\Debug\Software_Project.CustomShowButton.resources
+C:\Users\bluen\Documents\Visual Studio Projects\Pokemon_App\obj\Debug\Software_Project.Dashboard.resources
+C:\Users\bluen\Documents\Visual Studio Projects\Pokemon_App\obj\Debug\Software_Project.FrmLogin.resources
+C:\Users\bluen\Documents\Visual Studio Projects\Pokemon_App\obj\Debug\Software_Project.FrmRegister.resources
+C:\Users\bluen\Documents\Visual Studio Projects\Pokemon_App\obj\Debug\Software_Project.Properties.Resources.resources
+C:\Users\bluen\Documents\Visual Studio Projects\Pokemon_App\obj\Debug\Software_Project.User_Homepage.resources
+C:\Users\bluen\Documents\Visual Studio Projects\Pokemon_App\obj\Debug\Software Project.csproj.GenerateResource.cache
+C:\Users\bluen\Documents\Visual Studio Projects\Pokemon_App\obj\Debug\Software Project.csproj.CoreCompileInputs.cache
+C:\Users\bluen\Documents\Visual Studio Projects\Pokemon_App\obj\Debug\Software Project.exe
+C:\Users\bluen\Documents\Visual Studio Projects\Pokemon_App\obj\Debug\Software Project.pdb
+C:\Users\bluen\Documents\Visual Studio Projects\Pokemon_App\bin\Debug\Software Project.exe.config
+C:\Users\bluen\Documents\Visual Studio Projects\Pokemon_App\bin\Debug\Software Project.exe
+C:\Users\bluen\Documents\Visual Studio Projects\Pokemon_App\bin\Debug\Software Project.pdb
+C:\Users\bluen\Documents\Visual Studio Projects\Pokemon_App\bin\Debug\Newtonsoft.Json.dll
+C:\Users\bluen\Documents\Visual Studio Projects\Pokemon_App\bin\Debug\System.Net.Http.Extensions.dll
+C:\Users\bluen\Documents\Visual Studio Projects\Pokemon_App\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\bluen\Documents\Visual Studio Projects\Pokemon_App\bin\Debug\System.Net.Http.Primitives.dll
+C:\Users\bluen\Documents\Visual Studio Projects\Pokemon_App\bin\Debug\Newtonsoft.Json.xml
+C:\Users\bluen\Documents\Visual Studio Projects\Pokemon_App\obj\Debug\Software Project.csproj.CopyComplete
+C:\Users\bluen\Desktop\Pokemon_App\bin\Debug\Software Project.exe.config
+C:\Users\bluen\Desktop\Pokemon_App\bin\Debug\Software Project.exe
+C:\Users\bluen\Desktop\Pokemon_App\bin\Debug\Software Project.pdb
+C:\Users\bluen\Desktop\Pokemon_App\bin\Debug\Newtonsoft.Json.dll
+C:\Users\bluen\Desktop\Pokemon_App\bin\Debug\System.Net.Http.Extensions.dll
+C:\Users\bluen\Desktop\Pokemon_App\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\bluen\Desktop\Pokemon_App\bin\Debug\System.Net.Http.Primitives.dll
+C:\Users\bluen\Desktop\Pokemon_App\bin\Debug\Newtonsoft.Json.xml
+C:\Users\bluen\Desktop\Pokemon_App\obj\Debug\Software Project.csproj.AssemblyReference.cache
+C:\Users\bluen\Desktop\Pokemon_App\obj\Debug\Software Project.csproj.SuggestedBindingRedirects.cache
+C:\Users\bluen\Desktop\Pokemon_App\obj\Debug\Software_Project.AdminFrm.resources
+C:\Users\bluen\Desktop\Pokemon_App\obj\Debug\Software_Project.CustomCaughtButton.resources
+C:\Users\bluen\Desktop\Pokemon_App\obj\Debug\Software_Project.CustomFavoriteButton.resources
+C:\Users\bluen\Desktop\Pokemon_App\obj\Debug\Software_Project.CustomShowButton.resources
+C:\Users\bluen\Desktop\Pokemon_App\obj\Debug\Software_Project.Dashboard.resources
+C:\Users\bluen\Desktop\Pokemon_App\obj\Debug\Software_Project.FrmLogin.resources
+C:\Users\bluen\Desktop\Pokemon_App\obj\Debug\Software_Project.FrmRegister.resources
+C:\Users\bluen\Desktop\Pokemon_App\obj\Debug\Software_Project.Properties.Resources.resources
+C:\Users\bluen\Desktop\Pokemon_App\obj\Debug\Software_Project.User_Homepage.resources
+C:\Users\bluen\Desktop\Pokemon_App\obj\Debug\Software Project.csproj.GenerateResource.cache
+C:\Users\bluen\Desktop\Pokemon_App\obj\Debug\Software Project.csproj.CoreCompileInputs.cache
+C:\Users\bluen\Desktop\Pokemon_App\obj\Debug\Software Project.csproj.CopyComplete
+C:\Users\bluen\Desktop\Pokemon_App\obj\Debug\Software Project.exe
+C:\Users\bluen\Desktop\Pokemon_App\obj\Debug\Software Project.pdb
+C:\Users\bluen\Desktop\New folder (2)\Pokemon_App\bin\Debug\Software Project.exe.config
+C:\Users\bluen\Desktop\New folder (2)\Pokemon_App\bin\Debug\Software Project.exe
+C:\Users\bluen\Desktop\New folder (2)\Pokemon_App\bin\Debug\Software Project.pdb
+C:\Users\bluen\Desktop\New folder (2)\Pokemon_App\bin\Debug\Newtonsoft.Json.dll
+C:\Users\bluen\Desktop\New folder (2)\Pokemon_App\bin\Debug\System.Net.Http.Extensions.dll
+C:\Users\bluen\Desktop\New folder (2)\Pokemon_App\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\bluen\Desktop\New folder (2)\Pokemon_App\bin\Debug\System.Net.Http.Primitives.dll
+C:\Users\bluen\Desktop\New folder (2)\Pokemon_App\bin\Debug\Newtonsoft.Json.xml
+C:\Users\bluen\Desktop\New folder (2)\Pokemon_App\obj\Debug\Software Project.csproj.AssemblyReference.cache
+C:\Users\bluen\Desktop\New folder (2)\Pokemon_App\obj\Debug\Software Project.csproj.SuggestedBindingRedirects.cache
+C:\Users\bluen\Desktop\New folder (2)\Pokemon_App\obj\Debug\Software_Project.AdminFrm.resources
+C:\Users\bluen\Desktop\New folder (2)\Pokemon_App\obj\Debug\Software_Project.CustomCaughtButton.resources
+C:\Users\bluen\Desktop\New folder (2)\Pokemon_App\obj\Debug\Software_Project.CustomFavoriteButton.resources
+C:\Users\bluen\Desktop\New folder (2)\Pokemon_App\obj\Debug\Software_Project.CustomShowButton.resources
+C:\Users\bluen\Desktop\New folder (2)\Pokemon_App\obj\Debug\Software_Project.Dashboard.resources
+C:\Users\bluen\Desktop\New folder (2)\Pokemon_App\obj\Debug\Software_Project.FrmLogin.resources
+C:\Users\bluen\Desktop\New folder (2)\Pokemon_App\obj\Debug\Software_Project.FrmRegister.resources
+C:\Users\bluen\Desktop\New folder (2)\Pokemon_App\obj\Debug\Software_Project.Properties.Resources.resources
+C:\Users\bluen\Desktop\New folder (2)\Pokemon_App\obj\Debug\Software_Project.User_Homepage.resources
+C:\Users\bluen\Desktop\New folder (2)\Pokemon_App\obj\Debug\Software Project.csproj.GenerateResource.cache
+C:\Users\bluen\Desktop\New folder (2)\Pokemon_App\obj\Debug\Software Project.csproj.CoreCompileInputs.cache
+C:\Users\bluen\Desktop\New folder (2)\Pokemon_App\obj\Debug\Software Project.csproj.CopyComplete
+C:\Users\bluen\Desktop\New folder (2)\Pokemon_App\obj\Debug\Software Project.exe
+C:\Users\bluen\Desktop\New folder (2)\Pokemon_App\obj\Debug\Software Project.pdb

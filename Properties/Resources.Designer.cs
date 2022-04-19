@@ -223,6 +223,16 @@ namespace Software_Project.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap pokeball {
+            get {
+                object obj = ResourceManager.GetObject("pokeball", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap psychicType {
             get {
                 object obj = ResourceManager.GetObject("psychicType", resourceCulture);
