@@ -111,18 +111,16 @@
             this.selectedPokemon.AutoSize = true;
             this.selectedPokemon.Location = new System.Drawing.Point(575, 491);
             this.selectedPokemon.Name = "selectedPokemon";
-            this.selectedPokemon.Size = new System.Drawing.Size(59, 23);
+            this.selectedPokemon.Size = new System.Drawing.Size(0, 23);
             this.selectedPokemon.TabIndex = 17;
-            this.selectedPokemon.Text = "label1";
             // 
             // selectedPokemonID
             // 
             this.selectedPokemonID.AutoSize = true;
             this.selectedPokemonID.Location = new System.Drawing.Point(692, 491);
             this.selectedPokemonID.Name = "selectedPokemonID";
-            this.selectedPokemonID.Size = new System.Drawing.Size(59, 23);
+            this.selectedPokemonID.Size = new System.Drawing.Size(0, 23);
             this.selectedPokemonID.TabIndex = 18;
-            this.selectedPokemonID.Text = "label1";
             // 
             // searchPageButton
             // 

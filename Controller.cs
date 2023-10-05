@@ -7,6 +7,12 @@ using System.Data.OleDb;
 using System.Data;
 using System.Windows.Forms;
 using System.Media;
+using System.ComponentModel;
+using System.Drawing;
+using System.Net.Http;
+using System.Net.Http.Headers;
+using System.Net.Http.Formatting;
+using Newtonsoft.Json.Linq;
 
 
 namespace Software_Project
@@ -14,14 +20,50 @@ namespace Software_Project
 {   
     internal class Controller
     {
+        //--------------------------------------
         public static string databaseName = "";  //Keeps track of the current working database
         public static string subdataName = ""; //Keeps track of the sub database
         public static string currentKey = ""; //Current Primary Key
         public static string currentKey2 = ""; //Current Secondary Key
+        private const string URL = "https://pokeapi.co/api/v2/pokemon/"; 
         SoundPlayer sound = new SoundPlayer();
-
-
         public static Model model = new Model();
+        
+        public string APICall(string currentKey2) //used to gather pictures from Poke API
+        {
+            // Create HttpClient and BaseAddress objects
+            HttpClient client = new HttpClient();
+            client.BaseAddress = new Uri(URL);
+
+            // Add an Accept header for JSON format.
+            client.DefaultRequestHeaders.Accept.Add(
+            new MediaTypeWithQualityHeaderValue("application/json"));
+            // List data response.
+            HttpResponseMessage response = client.GetAsync(currentKey2.ToLower()).Result;  // Blocking call! Program will wait here until a response is received or a timeout occurs.
+            string pokemonPicLink = "";
+            if (response.IsSuccessStatusCode)
+            {
+                // Parse the response body.
+                dynamic pkmn = JObject.Parse(response.Content.ReadAsStringAsync().Result);
+
+                // Write to the console or our picbox location
+                pokemonPicLink = pkmn.sprites["front_default"];
+                
+            }
+
+            // Error handling if we fail to get a response
+            else
+            {
+                Console.WriteLine("{0} ({1})", (int)response.StatusCode, response.ReasonPhrase);
+            }
+            return pokemonPicLink;
+        }
+        //-------------------------------------
+        public void adminVerify()
+        {
+            if (FrmLogin.name == "admin") User_Homepage.AdminButton.Visible = true;
+        }
+
         public void verifyUserAndPass() //FrmLogin calls this method to read database for User and Pass Verification
         {
             model.openController();
@@ -110,10 +152,9 @@ namespace Software_Project
 
         public void Registration()
         {
-            if (FrmRegister.TxtUsername.Text == "" && FrmRegister.TxtPassword.Text == "" && FrmRegister.TxtComPassword.Text == "") //Blank Fields
+            if (FrmRegister.TxtUsername.Text == "" || FrmRegister.TxtPassword.Text == "" || FrmRegister.TxtComPassword.Text == "") //Blank Fields
             {
                 MessageBox.Show("Username and Password fields are empty", "Registration Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
-
             }
             else if (FrmRegister.TxtPassword.Text == FrmRegister.TxtComPassword.Text) //Condition checks to see if user is Unqiue before creating
             {
@@ -124,27 +165,15 @@ namespace Software_Project
                     //User has already been created
                     MessageBox.Show("User not Unquie!", "Registration Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     clearText();
-                    model.closeController();
-                    
-                }
-                else if(FrmRegister.TxtUsername.Text.ToUpper() == "UPDATE" || FrmRegister.TxtUsername.Text.ToUpper() == "DELETE")
-                {
-                    //Key word names
-                    MessageBox.Show("Not Allowed Username!", "Registration Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    clearText();
-                    model.closeController();
+                    model.closeController();  
                 }
                 else  ///Creates User
                 {
                     string register = "INSERT INTO tbl_users VALUES ('" + FrmRegister.TxtUsername.Text + "','" + FrmRegister.TxtPassword.Text + "')";
-
-                    
                     model.executeNonQueryCommand(model.databaseCommand(register, model.getCon()));
                     model.closeController();
                     clearText();
                     MessageBox.Show("Your Account has been Successfully Created", "Registration Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-
                 }
             }
             else  //Passwords do not match
@@ -153,6 +182,8 @@ namespace Software_Project
                 clearText();
             }
         }
+
+        //-------------------------------------
         public void listViewSelectChange() //Changes selection when user interacts with display
         {
             sound.Stop();
@@ -198,7 +229,7 @@ namespace Software_Project
             }
         }
 
-        public DataTable tableSet(OleDbDataAdapter dat)  //Fills Table Data Set
+        public DataTable tableSet(OleDbDataAdapter dat)  //Fills Table Data Set Responsible for getting the data
         {
             var ds = new DataSet();
             dat.Fill(ds);
@@ -214,7 +245,7 @@ namespace Software_Project
             model.closeController();
             return null;
         }
-        public void listViewChange(DataTable table, string view, string form) //Used to Update List View changes
+        public void listViewChange(DataTable table, string view, string form) //Used to update the list view based from data from the table
         {
             if (table != null)
             {
@@ -259,6 +290,7 @@ namespace Software_Project
                 }
             }
         }
+        //-------------------------------------
         public void addPokemon(string database) //Adds Pokemon into a database
         {
             model.openController();
@@ -436,6 +468,17 @@ namespace Software_Project
                 playPokemonCry(url);
             }
         }
+        public void playPokemonCry(string currentKey)
+        {
+            try
+            {
+                sound.Stop();
+                sound = new SoundPlayer(currentKey + ".wav");
+                sound.Play();
+            }
+            catch (Exception ex) { }
+        }
+        //--------------------------------------------
         public void imageTypeUpdate() //Updates Type and Pokemon Images
         {
             String[] types = new string[2];
@@ -443,7 +486,7 @@ namespace Software_Project
             string type2 = Dashboard.ListView1.SelectedItems[0].SubItems[3].Text;
             types[0] = type1.ToUpper();
             types[1] = type2.ToUpper();
-            Dashboard.PokemonPic.ImageLocation = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/" + currentKey + ".png";
+            Dashboard.PokemonPic.ImageLocation = APICall(currentKey2);
             for (int i = 0; i < types.Length; i++)
             {
                 if (types[i] == "WATER")
@@ -544,38 +587,8 @@ namespace Software_Project
             }
 
         }
-        public void caughtRefresh()
-        {
-            var table = showList("User_Caught", FrmLogin.name);
-            for (int x = 0; x < table.Rows.Count; x++)
-            {
-                string ID = table.Rows[x][0].ToString();
-                if (ID == currentKey)
-                {
-                    Dashboard.CaughtBox.Visible = true;
-                    break;
-                }
-                else Dashboard.CaughtBox.Visible = false;
-            }
-        }
-        public void playPokemonCry(string currentKey)
-        {
-            try
-            {
-                sound.Stop();
-                sound = new SoundPlayer(currentKey + ".wav");
-                sound.Play();
-            }
-            catch (Exception ex) { }
-        }
-
-
-        public void adminVerify()
-        {
-            if (FrmLogin.name == "admin") User_Homepage.AdminButton.Visible = true;
-        }
-
-        public bool stringToType(string type)
+        //--------------------------------------
+        public bool stringToType(string type) // Validates if string is a Pokemon Type
         {
             string[] types = {"WATER", "FIRE", "GRASS", "ELECTRIC", "FLYING",
                 "POISON", "STEEL", "BUG", "DARK", "DRAGON", "FAIRY", "FIGHTING",
@@ -596,6 +609,7 @@ namespace Software_Project
             return word;
         }
 
+        //----------------------
         public void refreshUserFavoriteBoxes()
         {
             var table = showList("User_Favorite", FrmLogin.name);
@@ -605,9 +619,10 @@ namespace Software_Project
             if (table != null) amount = table.Rows.Count;
             for (int x = 0; x < amount; x++)
             {
-                string ID = table.Rows[x][0].ToString();
-                boxes[x].ImageLocation = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/"
-                + ID + ".png";
+                string pokeName = table.Rows[x][1].ToString();
+                boxes[x].ImageLocation = APICall(pokeName);
+                //boxes[x].ImageLocation = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/"
+                //+ ID + ".png";
                 boxes[x].BackgroundImage = Software_Project.Properties.Resources.glow;
             }
             for(int y = amount; y < 6; y++)
@@ -665,8 +680,34 @@ namespace Software_Project
                 }
             }
         }
+        public void caughtRefresh()  //Caught Pokeball Display Refresh
+        {
+            try
+            {
 
-        //----------------------------------------
+                var table = showList("User_Caught", FrmLogin.name);
+                if (table != null)
+                {
+                    for (int x = 0; x < table.Rows.Count; x++)
+                    {
+                        string ID = table.Rows[x][0].ToString();
+                        if (ID == currentKey)
+                        {
+                            Dashboard.CaughtBox.Visible = true;
+                            break;
+                        }
+                        else Dashboard.CaughtBox.Visible = false;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+
+            }
+
+        }
+
+        //---------------------------------------- //CRUD System
         public void createFieldInList()
         {
             model.openController();
@@ -833,7 +874,7 @@ namespace Software_Project
             {
                 model.openController();
                 string check = "";
-                if (AdminFrm.words.Length != 2) //checks User format makes sure length is 2
+                if (AdminFrm.words.Length < 2) //checks User format makes sure length is 2
                 {
                     MessageBox.Show("Not in correct format!");
                     currentKey = "";
@@ -1133,9 +1174,10 @@ namespace Software_Project
             else if (AdminFrm.words.Length == 1 && AdminFrm.words[0].ToUpper() == "/HELP")
             {
                 MessageBox.Show("READ\n----------\ndatabases: Pokemon, User, Favorite, Caught\nOption for Pokemon & User: 'enter search keyword'" +
-                    "\n<database name> <optional keyword>\n----------\nCREATE/UPDATE (MUST BE IN CURRENT DATABASE)\n----------\nPokemon:\n---\n<ID> <NAME> <TYPE1> <OPTIONAL TYPE2 (NULL IF NONE)> " +
+                    "\n<database name> <optional keyword>\n----------\nCREATE(MUST BE IN CURRENT DATABASE)\n----------\nPokemon:\n---\n<ID> <NAME> <TYPE1> <OPTIONAL TYPE2 (NULL IF NONE)> " +
                     "<OPTIONAL DESC>\n---\nUser:\n---\n<Username> <Password> <Confirm Password>\n---\nCaught or Favorite:\n---\n" +
-                    "<Username> <ID>\n", "MANUAL");
+                    "<Username> <ID>\n----------\nUPDATE (MUST BE IN CURRENT DATABASE)\n----------\nPokemon:\n---\n<ID> <NAME> <TYPE1> <OPTIONAL TYPE2 (NULL IF NONE)> <OPTIONAL DESC>\n--\nUser:\n---\n" +
+                    "<Username> <Password>\n---\nCaught or Favorite:\n---\n<Username> <ID>\n---", "MANUAL");
             }
             else
             {

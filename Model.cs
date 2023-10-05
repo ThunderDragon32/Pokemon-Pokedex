@@ -12,7 +12,7 @@ namespace Software_Project
 {
     internal class Model
     {
-        private OleDbConnection con = new OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=db_users.mdb");
+        private OleDbConnection con = new OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=|DataDirectory|db_users.mdb");
 
         public OleDbConnection openController()
         {

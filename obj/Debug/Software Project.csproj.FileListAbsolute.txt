@@ -126,3 +126,365 @@ C:\Users\bluen\Desktop\New folder (2)\Pokemon_App\obj\Debug\Software Project.csp
 C:\Users\bluen\Desktop\New folder (2)\Pokemon_App\obj\Debug\Software Project.csproj.CopyComplete
 C:\Users\bluen\Desktop\New folder (2)\Pokemon_App\obj\Debug\Software Project.exe
 C:\Users\bluen\Desktop\New folder (2)\Pokemon_App\obj\Debug\Software Project.pdb
+C:\Users\bluen\Desktop\New folder\pokemon_app\bin\Debug\Software Project.exe.config
+C:\Users\bluen\Desktop\New folder\pokemon_app\bin\Debug\Software Project.exe
+C:\Users\bluen\Desktop\New folder\pokemon_app\bin\Debug\Software Project.pdb
+C:\Users\bluen\Desktop\New folder\pokemon_app\bin\Debug\Newtonsoft.Json.dll
+C:\Users\bluen\Desktop\New folder\pokemon_app\bin\Debug\System.Net.Http.Extensions.dll
+C:\Users\bluen\Desktop\New folder\pokemon_app\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\bluen\Desktop\New folder\pokemon_app\bin\Debug\System.Net.Http.Primitives.dll
+C:\Users\bluen\Desktop\New folder\pokemon_app\bin\Debug\Newtonsoft.Json.xml
+C:\Users\bluen\Desktop\New folder\pokemon_app\obj\Debug\Software Project.csproj.AssemblyReference.cache
+C:\Users\bluen\Desktop\New folder\pokemon_app\obj\Debug\Software Project.csproj.SuggestedBindingRedirects.cache
+C:\Users\bluen\Desktop\New folder\pokemon_app\obj\Debug\Software_Project.AdminFrm.resources
+C:\Users\bluen\Desktop\New folder\pokemon_app\obj\Debug\Software_Project.CustomCaughtButton.resources
+C:\Users\bluen\Desktop\New folder\pokemon_app\obj\Debug\Software_Project.CustomFavoriteButton.resources
+C:\Users\bluen\Desktop\New folder\pokemon_app\obj\Debug\Software_Project.CustomShowButton.resources
+C:\Users\bluen\Desktop\New folder\pokemon_app\obj\Debug\Software_Project.Dashboard.resources
+C:\Users\bluen\Desktop\New folder\pokemon_app\obj\Debug\Software_Project.FrmLogin.resources
+C:\Users\bluen\Desktop\New folder\pokemon_app\obj\Debug\Software_Project.FrmRegister.resources
+C:\Users\bluen\Desktop\New folder\pokemon_app\obj\Debug\Software_Project.Properties.Resources.resources
+C:\Users\bluen\Desktop\New folder\pokemon_app\obj\Debug\Software_Project.User_Homepage.resources
+C:\Users\bluen\Desktop\New folder\pokemon_app\obj\Debug\Software Project.csproj.GenerateResource.cache
+C:\Users\bluen\Desktop\New folder\pokemon_app\obj\Debug\Software Project.csproj.CoreCompileInputs.cache
+C:\Users\bluen\Desktop\New folder\pokemon_app\obj\Debug\Software Project.csproj.CopyComplete
+C:\Users\bluen\Desktop\New folder\pokemon_app\obj\Debug\Software Project.exe
+C:\Users\bluen\Desktop\New folder\pokemon_app\obj\Debug\Software Project.pdb
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\Software Project.exe.manifest
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\Software Project.application
+C:\Users\bluen\Desktop\pokemon_app\obj\Debug\Software Project.exe.manifest
+C:\Users\bluen\Desktop\pokemon_app\obj\Debug\Software Project.application
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\db_users.accdb
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\db_users.mdb
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\1.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\2.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\10.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\100.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\101.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\102.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\103.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\104.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\105.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\106.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\107.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\108.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\109.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\11.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\110.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\111.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\112.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\113.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\114.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\115.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\116.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\117.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\118.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\119.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\12.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\120.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\121.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\122.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\123.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\124.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\125.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\126.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\127.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\128.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\129.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\13.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\130.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\131.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\132.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\133.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\134.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\135.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\136.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\137.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\138.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\139.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\14.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\140.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\141.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\142.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\143.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\144.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\145.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\146.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\147.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\148.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\149.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\15.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\150.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\151.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\16.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\17.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\18.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\19.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\20.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\21.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\22.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\23.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\24.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\25.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\26.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\27.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\28.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\29.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\3.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\30.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\31.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\32.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\33.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\34.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\35.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\36.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\37.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\38.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\39.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\4.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\40.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\41.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\42.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\43.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\44.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\45.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\46.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\47.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\48.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\49.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\5.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\50.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\51.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\52.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\53.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\54.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\55.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\56.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\57.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\58.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\59.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\6.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\60.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\61.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\62.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\63.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\64.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\65.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\66.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\67.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\68.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\69.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\7.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\70.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\71.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\72.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\73.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\74.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\75.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\76.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\77.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\78.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\79.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\8.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\80.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\81.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\82.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\83.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\84.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\85.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\86.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\87.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\88.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\89.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\9.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\90.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\91.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\92.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\93.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\94.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\95.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\96.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\97.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\98.wav
+C:\Users\bluen\Desktop\pokemon_app\bin\Debug\99.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\1.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\10.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\100.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\101.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\102.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\103.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\104.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\105.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\106.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\107.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\108.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\109.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\11.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\110.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\111.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\112.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\113.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\114.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\115.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\116.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\117.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\118.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\119.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\12.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\120.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\121.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\122.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\123.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\124.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\125.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\126.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\127.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\128.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\129.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\13.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\130.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\131.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\132.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\133.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\134.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\135.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\136.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\137.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\138.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\139.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\14.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\140.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\141.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\142.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\143.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\144.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\145.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\146.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\147.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\148.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\149.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\15.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\150.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\151.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\16.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\17.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\18.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\19.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\2.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\20.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\21.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\22.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\23.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\24.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\25.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\26.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\27.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\28.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\29.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\3.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\30.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\31.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\32.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\33.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\34.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\35.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\36.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\37.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\38.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\39.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\4.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\40.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\41.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\42.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\43.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\44.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\45.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\46.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\47.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\48.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\49.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\5.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\50.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\51.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\52.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\53.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\54.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\55.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\56.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\57.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\58.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\59.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\6.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\60.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\61.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\62.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\63.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\64.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\65.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\66.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\67.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\68.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\69.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\7.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\70.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\71.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\72.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\73.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\74.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\75.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\76.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\77.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\78.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\79.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\8.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\80.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\81.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\82.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\83.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\84.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\85.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\86.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\87.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\88.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\89.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\9.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\90.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\91.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\92.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\93.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\94.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\95.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\96.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\97.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\98.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\99.wav
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\db_users.accdb
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\db_users.mdb
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\Software Project.exe.config
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\Software Project.exe.manifest
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\Software Project.application
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\Software Project.exe
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\Software Project.pdb
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\Newtonsoft.Json.dll
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\System.Net.Http.Extensions.dll
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\System.Net.Http.Primitives.dll
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\bin\Debug\Newtonsoft.Json.xml
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\obj\Debug\Software Project.csproj.AssemblyReference.cache
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\obj\Debug\Software Project.csproj.SuggestedBindingRedirects.cache
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\obj\Debug\Software_Project.AdminFrm.resources
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\obj\Debug\Software_Project.CustomCaughtButton.resources
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\obj\Debug\Software_Project.CustomFavoriteButton.resources
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\obj\Debug\Software_Project.CustomShowButton.resources
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\obj\Debug\Software_Project.Dashboard.resources
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\obj\Debug\Software_Project.FrmLogin.resources
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\obj\Debug\Software_Project.FrmRegister.resources
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\obj\Debug\Software_Project.Properties.Resources.resources
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\obj\Debug\Software_Project.User_Homepage.resources
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\obj\Debug\Software Project.csproj.GenerateResource.cache
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\obj\Debug\Software Project.csproj.CoreCompileInputs.cache
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\obj\Debug\Software Project.exe.manifest
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\obj\Debug\Software Project.application
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\obj\Debug\Software Project.csproj.CopyComplete
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\obj\Debug\Software Project.exe
+C:\Users\bluen\Documents\School\MU\Year 3\Semester 2\Software Engineering 2\pokemon_app\obj\Debug\Software Project.pdb
